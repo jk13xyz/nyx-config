@@ -5,6 +5,7 @@
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
+      pkgs.dolphin
     ];
     stateVersion = lib.mkDefault "23.05";
   };
