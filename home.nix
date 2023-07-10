@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 let
   addons = inputs.firefox-addons.packages.${pkgs.system};
 in
