@@ -1,9 +1,13 @@
 { config, lib, pkgs, inputs, ... }:
+
+let
+    configHome = lib.mkDefault "${config.home.homeDirectory}/.config";
+in
+
 {
   home = {
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
-    configHome = lib.mkDefault "${config.home.homeDirectory}/.config";
     packages = with pkgs; [
       pkgs.neofetch
     ];
