@@ -49,17 +49,8 @@
     };
   };
 
-  programs.neovim = {
-    enable = true;
-  };
-
   programs.kitty = {
     enable = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    enableBashIntegration = true;
   };
 
   services.nextcloud-client = {
