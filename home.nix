@@ -27,7 +27,6 @@
   programs.firefox = {
     enable = true;
     package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-      CaptivePortal = false;
       DisableFirefoxStudies = true;
       DisablePocket = true;
       DisableTelemetry = true;
