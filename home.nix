@@ -5,7 +5,7 @@
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
-      pkgs.libsForQt5.dolphin
+      pkgs.neofetch
     ];
     stateVersion = lib.mkDefault "23.05";
   };
