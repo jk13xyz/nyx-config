@@ -1,5 +1,7 @@
 { config, lib, pkgs, ... }:
-
+let
+  addons = inputs.firefox-addons.packages.${pkgs.system};
+in
 {
   home = {
     username = lib.mkDefault "jens";
@@ -26,6 +28,15 @@
 
   programs.firefox = {
     enable = true;
+    extensions = with addons; [
+      ublock-origin
+    ];
+    profiles.${config.home.username} = {
+      "browser.disableResetPrompt" = true;
+      "dom.security.https_only.mode" = true;
+      "identity.fxaccounts.enabled" = true;
+      "signon.rememberSignons" = false;
+    };
   };
 
   programs.kitty = {
