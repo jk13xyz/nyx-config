@@ -11,7 +11,7 @@
 
     
     file = {
-      "${config.xdg.configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
+      "/home/${config.home.username}".text = builtins.readFile ./neofetch.conf;
     };  
 
   programs.home-manager.enable = true;
