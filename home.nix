@@ -26,26 +26,6 @@
 
   programs.firefox = {
     enable = true;
-    package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-      DisableFirefoxStudies = true;
-      DisablePocket = true;
-      DisableTelemetry = true;
-      DisableFirefoxAccounts = false;
-      OfferToSaveLogins = false;
-      OfferToSaveLoginsDefault = false;
-      PasswordManagerEnabled = false;
-      FirefoxHome = {
-        Search = true;
-        Pocket = false;
-        TopSites = true;
-        Snippets = false;
-        Highlights = false;
-      };
-      UserMessaging = {
-        ExtensionRecommendations = false;
-        SkipOnboarding = true;
-      };
-    };
   };
 
   programs.kitty = {
