@@ -33,17 +33,17 @@
     in {
        nixosConfigurations = {
          nyx-pad  = lib.nixosSystem {
-	   inherit system;
-	   modules = [
-	     ./configuration.nix
-	     home-manager.nixosModules.home-manager
-             hyprland.nixosModules.default
-	     {
-	       home-manager.useGlobalPkgs = true;
-	       home-manager.useUserPackages = true;
-	       home-manager.users.jens = import ./home.nix;
-	      }
-	   ];
+          inherit system;
+          modules = [
+            ./configuration.nix
+            home-manager.nixosModules.home-manager
+                  hyprland.nixosModules.default
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.jens = import ./home.nix;
+              }
+          ];
          };
        };
      };

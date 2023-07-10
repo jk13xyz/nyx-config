@@ -9,6 +9,11 @@
     stateVersion = lib.mkDefault "23.05";
   };
 
+    
+    file = {
+      "${config.xdg.configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
+    };  
+
   programs.home-manager.enable = true;
 
   programs.git = {
