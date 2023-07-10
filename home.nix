@@ -1,9 +1,4 @@
 { config, lib, pkgs, inputs, ... }:
-
-let
-    configHome = "${config.home.homeDirectory}/.config";
-in
-
 {
   home = {
     username = lib.mkDefault "jens";
@@ -13,11 +8,6 @@ in
     ];
     stateVersion = lib.mkDefault "23.05";
   };
-
-    
-    file = {
-      "${configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
-    };  
 
   programs.home-manager.enable = true;
 
