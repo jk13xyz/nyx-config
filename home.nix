@@ -28,14 +28,22 @@ in
 
   programs.firefox = {
     enable = true;
-    extensions = with addons; [
-      ublock-origin
-    ];
     profiles.${config.home.username} = {
-      "browser.disableResetPrompt" = true;
-      "dom.security.https_only.mode" = true;
-      "identity.fxaccounts.enabled" = true;
-      "signon.rememberSignons" = false;
+      bookmarks = { };
+      extensions = with addons; [
+        ublock-origin
+      ];
+      bookmarks = { };
+      settings = {
+        "browser.disableResetPrompt" = true;
+        "browser.download.panel.shown" = true;
+        "browser.download.useDownloadDir" = false;
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+        "browser.shell.checkDefaultBrowser" = false;
+        "browser.shell.defaultBrowserCheckCount" = 1;
+        "identity.fxaccounts.enabled" = false;
+        "signon.rememberSignons" = false;
+      };
     };
   };
 
