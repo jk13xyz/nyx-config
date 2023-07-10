@@ -29,8 +29,8 @@
     package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
       CaptivePortal = false;
       DisableFirefoxStudies = true;
-      Disable Pocket = true;
-      Disable Telemetry = true;
+      DisablePocket = true;
+      DisableTelemetry = true;
       DisableFirefoxAccounts = false;
       OfferToSaveLogins = false;
       OfferToSaveLoginsDefault = false;
