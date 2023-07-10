@@ -3,6 +3,7 @@
   home = {
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
+    configHome = lib.mkDefault "${config.home.homeDirectory}/.config";
     packages = with pkgs; [
       pkgs.neofetch
     ];
@@ -11,7 +12,7 @@
 
     
     file = {
-      "${config.home.homeDirectory}".text = builtins.readFile ./neofetch.conf;
+      "${config.home.configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
     };  
 
   programs.home-manager.enable = true;
