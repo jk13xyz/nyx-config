@@ -18,7 +18,7 @@
     userName = "JK13xyz";
     userEmail = "jens@jk13.dev";
     signing = {
-      key = "9D8B36DFE8EABC3C";
+      key = "1305BFA92EF9D14E";
       gpgPath = "${config.programs.gpg.package}/bin/gpg2";
       signByDefault = true;
     };
@@ -51,6 +51,11 @@
 
   programs.kitty = {
     enable = true;
+    shellIntegration.enableFishIntegration = true;
+  };
+
+  programs.fish.enable = {
+    true;
   };
 
   services.nextcloud-client = {
