@@ -54,8 +54,8 @@
     shellIntegration.enableFishIntegration = true;
   };
 
-  programs.fish.enable = {
-    true;
+  programs.fish = {
+    enable = true;
   };
 
   services.nextcloud-client = {
