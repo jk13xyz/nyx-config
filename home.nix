@@ -1,7 +1,7 @@
 { config, lib, pkgs, inputs, ... }:
 
 let
-    configHome = lib.mkDefault "${config.home.homeDirectory}/.config";
+    configHome = "${config.home.homeDirectory}/.config";
 in
 
 {
@@ -16,7 +16,7 @@ in
 
     
     file = {
-      "${config.home.configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
+      "${configHome}/neofetch/config.conf".text = builtins.readFile ./neofetch.conf;
     };  
 
   programs.home-manager.enable = true;
