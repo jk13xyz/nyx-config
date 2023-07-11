@@ -17,14 +17,11 @@ in
 
   programs.home-manager.enable = true;
 
-  home.file = {
-      "${configDir}.foorc" = {
-          text = ''
-              Hello, world!
-          '';
-      };
-  };
-
+  imports =
+    [ 
+      ./neofetch.nix
+    ];  
+  
   programs.git = {
     enable = true;
     lfs.enable = true;
