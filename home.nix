@@ -1,4 +1,10 @@
 { config, lib, pkgs, inputs, ... }:
+
+let
+  configDir = "/home/${config.home.username}/.config";
+
+in
+
 {
   home = {
     username = lib.mkDefault "jens";
@@ -12,7 +18,7 @@
   programs.home-manager.enable = true;
 
   home.file = {
-      "${home.homeDirectory}.foorc" = {
+      "${configDir}.foorc" = {
           text = ''
               Hello, world!
           '';
