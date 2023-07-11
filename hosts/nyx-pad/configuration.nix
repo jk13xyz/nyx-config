@@ -3,6 +3,7 @@
 {
   imports =
     [ 
+      ../common/locale.nix
       ./hardware-configuration.nix
     ];
 
@@ -23,16 +24,6 @@
   networking.hostName = "nyx-pad";
   networking.networkmanager.enable = true;
 #  networking.wireless.enable = true;
-
-  time.timeZone = "Europe/Zurich";
-  i18n.defaultLocale = "de_CH.UTF-8";
-
-  services.xserver = {
-    layout = "ch";
-    xkbVariant = "de_nodeadkeys";
-  };
-
-  console.keyMap = "sg";
 
   users.users.jens = {
     isNormalUser = true;
