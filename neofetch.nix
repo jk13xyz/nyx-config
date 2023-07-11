@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
+let
+  configDir = "/home/${config.home.username}/.config";
+in
+
 {
  
   home.file = {
