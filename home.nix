@@ -14,7 +14,8 @@
 
   imports =
     [ 
-      ./neofetch.nix
+      ./dotfiles/firefox.nix
+      ./dotfiles/neofetch.nix
     ];  
   
   programs.git = {
@@ -26,22 +27,6 @@
       key = "1305BFA92EF9D14E";
       gpgPath = "${config.programs.gpg.package}/bin/gpg2";
       signByDefault = true;
-    };
-  };
-
-  programs.firefox = {
-    enable = true;
-    profiles.${config.home.username} = {
-      settings = {
-        "browser.disableResetPrompt" = true;
-        "browser.download.panel.shown" = true;
-        "browser.download.useDownloadDir" = false;
-        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
-        "browser.shell.checkDefaultBrowser" = false;
-        "browser.shell.defaultBrowserCheckCount" = 1;
-        "identity.fxaccounts.enabled" = false;
-        "signon.rememberSignons" = false;
-      };
     };
   };
 

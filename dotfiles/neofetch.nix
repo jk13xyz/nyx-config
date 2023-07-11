@@ -62,9 +62,9 @@ in
             speed_type="scaling_max_freq"
             speed_shorthand="on"
             cpu_brand="on"
-            cpu_speed="on"
-            cpu_cores="logical"
-            cpu_temp="on"
+            cpu_speed="off"
+            cpu_cores="off"
+            cpu_temp="off"
 
             ##--------- GPU
             gpu_brand="on"
