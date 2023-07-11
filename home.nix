@@ -11,6 +11,14 @@
 
   programs.home-manager.enable = true;
 
+  home.file = {
+      "${homeDirectory}.foorc" = {
+          text = ''
+              Hello, world!
+          '';
+      };
+  };
+
   programs.git = {
     enable = true;
     lfs.enable = true;
