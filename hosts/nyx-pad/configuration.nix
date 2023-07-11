@@ -3,6 +3,7 @@
 {
   imports =
     [ 
+      ../common/fonts.nix      
       ../common/locale.nix
       ./hardware-configuration.nix
     ];
@@ -40,14 +41,6 @@
     pkgs.mako
     pkgs.rofi
     pkgs.brightnessctl
-  ];
-
-  fonts.fonts = with pkgs; [
-    font-awesome
-    noto-fonts
-    noto-fonts-emoji
-    fira-code
-    fira-code-symbols
   ];
 
   programs.gnupg.agent = {
