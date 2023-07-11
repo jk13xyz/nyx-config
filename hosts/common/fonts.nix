@@ -1,4 +1,4 @@
- { config, fonts, ... }:
+ { config, pkgs, fonts, ... }:
 
  {
 
