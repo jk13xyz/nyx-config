@@ -12,7 +12,7 @@
   programs.home-manager.enable = true;
 
   home.file = {
-      "${homeDirectory}.foorc" = {
+      "${home.homeDirectory}.foorc" = {
           text = ''
               Hello, world!
           '';
