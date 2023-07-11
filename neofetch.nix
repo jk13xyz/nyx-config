@@ -7,12 +7,11 @@ in
 {
  
   home.file = {
-      "${configDir}/neofetch/configuration.conf" = {
+      "${configDir}/neofetch/neofetch.conf" = {
           text = ''
             print_info() {
                 info "''${cl2} ╭─" distro
                 info "''${cl2} ├─" kernel
-            #   info "''${cl2} ├─" users
                 info "''${cl2} ├─" packages$
                 info "''${cl2} ╰─" uptime
                 echo
@@ -20,7 +19,6 @@ in
                 info "''${cl6} ├─" de
                 info "''${cl6} ├─" wm
                 info "''${cl6} ├─" theme
-            #   info "''${cl6} ├─" icons
                 info "''${cl6} ├─" font
                 info "''${cl6} ├─" term_font
                 info "''${cl6} ╰─" term
@@ -29,9 +27,7 @@ in
                 info "''${cl4} ├─" cpu
                 info "''${cl4} ├─" memory
                 info "''${cl4} ├─ ''${cl0}" disk
-            #   info "''${cl4} ├─ ''${cl0} " battery
                 info "''${cl4} ├─" gpu
-            #   info "''${cl4} ├─" gpu_driver
                 info "''${cl4} ╰─" resolution
 
                 prin " "
