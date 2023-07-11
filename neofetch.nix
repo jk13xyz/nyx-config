@@ -10,28 +10,32 @@ in
       "${configDir}/neofetch/configuration.conf" = {
           text = ''
             print_info() {
-                info \"${cl2} ╭─" distro
-                info \"${cl2} ├─" kernel
-                info \"${cl2} ├─" packages
-                info \"${cl2} ╰─" uptime
+                info "${cl2} ╭─" distro
+                info "${cl2} ├─" kernel
+            #   info "${cl2} ├─" users
+                info "${cl2} ├─" packages
+                info "${cl2} ╰─" uptime
                 echo
-                info \"${cl6} ╭─" shell
-                info \"${cl6} ├─" de
-                info \"${cl6} ├─" wm
-                info \"${cl6} ├─" theme
-                info \"${cl6} ├─" font
-                info \"${cl6} ├─" term_font
-                info \"${cl6} ╰─" term
+                info "${cl6} ╭─" shell
+                info "${cl6} ├─" de
+                info "${cl6} ├─" wm
+                info "${cl6} ├─" theme
+            #   info "${cl6} ├─" icons
+                info "${cl6} ├─" font
+                info "${cl6} ├─" term_font
+                info "${cl6} ╰─" term
                 echo
-                info \"${cl4} ╭─" model
-                info \"${cl4} ├─" cpu
-                info \"${cl4} ├─" memory
-                info \"${cl4} ├─ \${cl0}" disk
-                info \"${cl4} ├─" gpu
-                info \"${cl4} ╰─" resolution
+                info "${cl4} ╭─" model
+                info "${cl4} ├─" cpu
+                info "${cl4} ├─" memory
+                info "${cl4} ├─ ${cl0}" disk
+            #   info "${cl4} ├─ ${cl0} " battery
+                info "${cl4} ├─" gpu
+            #   info "${cl4} ├─" gpu_driver
+                info "${cl4} ╰─" resolution
 
                 prin " "
-                prin "\n \n ${cl0}─\${cl1}──\${cl2}──\${cl3}──\${cl4}──\${cl5}──\${cl6}──\${cl7}─  "
+                prin "\n \n ${cl0}─${cl1}──${cl2}──${cl3}──${cl4}──${cl5}──${cl6}──${cl7}─  "
             }
 
             ##--------- Title
@@ -118,17 +122,17 @@ in
             reset="\033[0m"
             bgyellow="\033[1;43;33m"
             bgwhite="\033[1;47;37m"
-            cl0=\"${reset}"
-            cl1=\"${magenta}"
-            cl2=\"${green}"
-            cl3=\"${white}"
-            cl4=\"${blue}"
-            cl5=\"${red}"
-            cl6=\"${yellow}"
-            cl7=\"${cyan}"
-            cl8=\"${black}"
-            cl9=\"${bgyellow}"
-            cl10=\"${bgwhite}"
+            cl0="${reset}"
+            cl1="${magenta}"
+            cl2="${green}"
+            cl3="${white}"
+            cl4="${blue}"
+            cl5="${red}"
+            cl6="${yellow}"
+            cl7="${cyan}"
+            cl8="${black}"
+            cl9="${bgyellow}"
+            cl10="${bgwhite}"
 
             ##--------- Toggle color blocks
             color_blocks="on"
