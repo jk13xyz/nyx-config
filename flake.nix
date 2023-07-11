@@ -35,9 +35,9 @@
          nyx-pad  = lib.nixosSystem {
           inherit system;
           modules = [
-            ./configuration.nix
+            ./hosts/nyx-pad/configuration.nix
             home-manager.nixosModules.home-manager
-                  hyprland.nixosModules.default
+            hyprland.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
