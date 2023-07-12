@@ -1,31 +1,33 @@
 {
   description = "NixOS configuration";
+  
+  rec {
+    inputs = {
+      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+      nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.05";
+      nixos-hardware.url = "github:nixos/nixos-hardware/master";
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.05";
-    nixos-hardware.url = "github:nixos/nixos-hardware/master";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+      hyprland = {
+        url = "github:hyprwm/Hyprland";
+      };
+
+      sops-nix = {
+        url = "github:Mic92/sops-nix";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+
+      agenix.url = {
+        url = "github:ryantm/agenix";
+      };
+
+      
     };
-
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-    };
-
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    agenix.url = {
-      url = "github:ryantm/agenix";
-    };
-
-    
   };
-
+  
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager, hyprland, ... }: 
     let
       system = "x86_64-linux";
