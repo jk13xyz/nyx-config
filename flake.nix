@@ -43,7 +43,7 @@
        nixosConfigurations = {
          nyx-pad  = lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs outputs };
+          specialArgs = { inherit inputs outputs; };
           modules = [
             ./hosts/nyx-pad/configuration.nix
             home-manager.nixosModules.home-manager
