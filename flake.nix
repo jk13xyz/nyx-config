@@ -19,7 +19,7 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
-      agenix.url = {
+      agenix = {
         url = "github:ryantm/agenix";
       };
 
