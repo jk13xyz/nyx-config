@@ -41,7 +41,14 @@
     pkgs.mako
     pkgs.rofi
     pkgs.brightnessctl
+    yubikey-personalization
   ];
+
+  services.udev.packages = with pkgs; [
+    yubikey-personalization
+  ];
+
+  services.pcscd.enable = true;
 
   programs.gnupg.agent = {
      enable = true;
