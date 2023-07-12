@@ -26,7 +26,7 @@
       
     };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager, hyprland, ... }: 
+  outputs = inputs@{ self, lib, nixpkgs, nixpkgs-stable, home-manager, hyprland, ... }: 
     let
       system = "x86_64-linux";
       username = "jens";
