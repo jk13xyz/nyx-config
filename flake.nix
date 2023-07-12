@@ -1,7 +1,6 @@
 {
   description = "NixOS configuration";
   
-  rec {
     inputs = {
       nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
       nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.05";
@@ -26,8 +25,7 @@
 
       
     };
-  };
-  
+
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager, hyprland, ... }: 
     let
       system = "x86_64-linux";
@@ -45,6 +43,7 @@
        nixosConfigurations = {
          nyx-pad  = lib.nixosSystem {
           inherit system;
+          specialArgs = { inherit inputs outputs };
           modules = [
             ./hosts/nyx-pad/configuration.nix
             home-manager.nixosModules.home-manager
