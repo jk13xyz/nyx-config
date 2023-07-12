@@ -14,6 +14,10 @@
       url = "github:hyprwm/Hyprland";
     };
 
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+    };
+
     
   };
 
@@ -38,6 +42,7 @@
             ./hosts/nyx-pad/configuration.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
+            sops-nix.nixosModules.sops
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
