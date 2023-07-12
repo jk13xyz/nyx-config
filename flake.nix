@@ -18,6 +18,10 @@
       url = "github:Mic92/sops-nix";
     };
 
+    agenix.url = {
+      url = "github:ryantm/agenix";
+    };
+
     
   };
 
@@ -43,6 +47,7 @@
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             sops-nix.nixosModules.sops
+            agenix.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
