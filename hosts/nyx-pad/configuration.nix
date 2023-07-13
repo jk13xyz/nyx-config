@@ -42,6 +42,7 @@
     pkgs.rofi
     pkgs.brightnessctl
     yubikey-personalization
+    yubikey-manager
   ];
 
   services.udev.packages = with pkgs; [
