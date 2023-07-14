@@ -42,6 +42,7 @@
     pkgs.mako
     pkgs.rofi
     pkgs.brightnessctl
+    pkgs.xdg-desktop-portal-hyprland
     yubikey-personalization
     yubikey-manager
   ];
