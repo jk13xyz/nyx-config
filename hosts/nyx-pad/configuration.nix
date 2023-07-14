@@ -31,6 +31,7 @@
     description = "Jens Krieger";
     extraGroups = [ "jens" "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
 
   services.getty.autologinUser = "jens";
@@ -50,6 +51,8 @@
   ];
 
   services.pcscd.enable = true;
+
+  programs.zsh.enable = true;
 
   programs.gnupg.agent = {
      enable = true;

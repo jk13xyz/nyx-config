@@ -24,7 +24,7 @@
     shellIntegration.enableFishIntegration = true;
   };
 
-  programs.fish = {
+  programs.zsh = {
     enable = true;
   };
 
