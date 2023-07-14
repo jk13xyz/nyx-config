@@ -26,6 +26,17 @@
 
   programs.zsh = {
     enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" "zsh-autosuggestions" ];
+    };
+  };
+
+  progams.starship = {
+    enable = true;
+    settings = {
+
+    };
   };
 
   services.clipman = {
