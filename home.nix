@@ -8,6 +8,9 @@
       pkgs.neofetch
     ];
     stateVersion = lib.mkDefault "23.05";
+    sessionVariables = {
+      XDG_RUNTIME_DIR = "/run/user/$UID";
+    };
   };
 
   programs.home-manager.enable = true;
