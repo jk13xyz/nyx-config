@@ -43,6 +43,7 @@
     pkgs.rofi
     pkgs.brightnessctl
     pkgs.xdg-desktop-portal-hyprland
+    pkgs.zip
     pkgs.zsh-autocomplete
     pkgs.zsh-syntax-highlighting
     yubikey-personalization
