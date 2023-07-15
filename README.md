@@ -9,8 +9,8 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 ## CURRENT_SETUP
 
 ### NYX_PAD
-    Lenovo ThinkPad X1 Nano Gen 2 w/ Core i7-1270p + 16GB RAM
-    DE: Hyprland + WM: Wayland
+    Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
+    WM/DE: Wayland + Hyprland
     Shell: zsh + oh-my-zsh + Starship
     OS Version: 23.11-unstable
 
