@@ -9,6 +9,9 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
+  boot.extraModprobeConfig = ''
+    options snd slots=snd-hda-intel
+  '';
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/cdb46fe7-2c2d-46b7-b9eb-2280a52803f8";
