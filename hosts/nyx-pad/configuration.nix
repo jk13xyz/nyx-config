@@ -52,11 +52,6 @@
     yubikey-manager
   ];
 
-  hardware.pulseaudio = {
-    enable = true;
-    support32Bit = true;
-  };
-
   services.udev.packages = with pkgs; [
     yubikey-personalization
   ];
