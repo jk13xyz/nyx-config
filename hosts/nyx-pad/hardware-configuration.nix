@@ -36,7 +36,13 @@
         load-module module-bluez5-discover
       '';
   };
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    General = {
+      enable = "Source,Sink,Media,Socket";
+    };
+  };
+  
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
 
