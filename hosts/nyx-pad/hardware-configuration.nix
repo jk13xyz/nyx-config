@@ -25,7 +25,7 @@
   hardware.pulseaudio = {
     enable = true;
     support32Bit = true;
-    package = pkgs.pulseaudioFull
+    package = pkgs.pulseaudioFull;
     configFile = pkgs.writeText "default.pa" ''
         load-module module-bluetooth-policy
         load-module module-bluetooth-discover
