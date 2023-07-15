@@ -43,6 +43,8 @@
     pkgs.rofi
     pkgs.brightnessctl
     pkgs.xdg-desktop-portal-hyprland
+    pkgs.zsh-autocomplete
+    pkgs.zsh-syntax-highlighting
     yubikey-personalization
     yubikey-manager
   ];
