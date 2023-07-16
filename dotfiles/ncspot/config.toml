@@ -17,4 +17,4 @@ playback_state = "Paused"
 library_tabs = [ "tracks", "albums", "artists", "playlists", "browse" ]
 cover_max_scale = 1.0
 hide_display_name = false
-statusbar_format = "%artists - %track"
+statusbar_format = "%artists - %title"
