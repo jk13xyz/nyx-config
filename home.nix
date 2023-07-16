@@ -17,7 +17,7 @@
 
   imports =
     [ 
-      ./dotfiles/git.nix
+      ./dotfiles/git/default.nix
       ./dotfiles/firefox.nix
       ./dotfiles/neofetch/default.nix
       ./dotfiles/waybar/default.nix

@@ -6,6 +6,7 @@
       ../common/fonts.nix      
       ../common/locale.nix
       ./hardware-configuration.nix
+      ../../dotfiles/hyprland/default.nix
     ];
 
   nix = {
@@ -66,8 +67,6 @@
      enable = true;
      enableSSHSupport = true;
    };
-  programs.hyprland.enable = true;
-#  programs.home-manager.enable = true;
 
   services.pipewire = {
      enable = true;
