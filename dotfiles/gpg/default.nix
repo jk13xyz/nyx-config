@@ -2,9 +2,7 @@
   programs.gpg = {
     enable = true;
     publicKeys = [
-      { 
         source = ./secrets/jk13xyz.asc; 
-      }
     ];
   };
 
