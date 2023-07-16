@@ -5,7 +5,6 @@
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
-      pkgs.neofetch
       pkgs.ncspot
     ];
     stateVersion = lib.mkDefault "23.05";
