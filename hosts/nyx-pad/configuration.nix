@@ -38,10 +38,11 @@
 
   environment.systemPackages = with pkgs; [
     wget
-    pkgs.polkit
-    pkgs.mako
-    pkgs.rofi
+    pkgs.bluez
     pkgs.brightnessctl
+    pkgs.mako
+    pkgs.polkit
+    pkgs.rofi
     pkgs.pavucontrol
     pkgs.pipewire
     pkgs.pulseaudio
