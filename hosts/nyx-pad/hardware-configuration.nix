@@ -29,13 +29,16 @@
   hardware.pulseaudio = {
     enable = true;
     package = pkgs.pulseaudioFull;
+    extraConfig = ''
+      load-module module-switch-on-connect
+      load-module module-bluetooth-discover
+      load-module module-bluetooth-policy
+      load-module module-bluez5-device
+      load-module module-bluez5-discover
+    '';
   };
   hardware.bluetooth = {
     enable = true;
-    settings = {
-      general = {
-        enable = "Control,Gateway,Headset,Media,Sink,Socket,Source";
-      };
     };
   };
   

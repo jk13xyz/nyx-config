@@ -38,8 +38,6 @@
 
   environment.systemPackages = with pkgs; [
     wget
-    pkgs.bluez
-    pkgs.bluez-alsa
     pkgs.brightnessctl
     pkgs.mako
     pkgs.polkit
