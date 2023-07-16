@@ -66,7 +66,6 @@
      enableSSHSupport = true;
    };
   programs.hyprland.enable = true;
-  programs.waybar.enable = true;
 #  programs.home-manager.enable = true;
 
   services.pipewire = {

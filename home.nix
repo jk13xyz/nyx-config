@@ -20,6 +20,7 @@
       ./dotfiles/git.nix
       ./dotfiles/firefox.nix
       ./dotfiles/neofetch/default.nix
+      ./dotfiles/waybar/default.nix
       ./dotfiles/zsh/default.nix
     ];  
 
