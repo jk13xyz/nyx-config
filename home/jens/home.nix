@@ -17,12 +17,12 @@
 
   imports =
     [ 
-      ./dotfiles/git/default.nix
-      ./dotfiles/firefox/default.nix
-      ./dotfiles/neofetch/default.nix
-      ./dotfiles/starship/default.nix
-      ./dotfiles/waybar/default.nix
-      ./dotfiles/zsh/default.nix
+      ../../dotfiles/git/default.nix
+      ../../dotfiles/firefox/default.nix
+      ../../dotfiles/neofetch/default.nix
+      ../../dotfiles/starship/default.nix
+      ../../dotfiles/waybar/default.nix
+      ../../dotfiles/zsh/default.nix
     ];  
 
   services.clipman = {
