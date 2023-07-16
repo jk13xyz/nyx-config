@@ -30,6 +30,16 @@
             "10": []
         }
     },
+
+    //"custom/music": {
+        //"format": "󰎆  {}",
+        //"escape": true,
+        //"interval": 5,
+        //"tooltip": false,
+        //"exec": "playerctl metadata --format='{{ title }}'",
+        //"on-click": "playerctl play-pause",
+        //"max-length": 50
+    //},
     
     //"custom/power_profile":{
         //shows the current power profile and switches to next on click
@@ -103,7 +113,7 @@
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "Mic: {volume}%",
-        "format-source-muted": "Mic: Muted",
+        "format-source-muted": "Mic: ",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
@@ -112,7 +122,7 @@
     
     "temperature": {
         "thermal-zone": 1,
-        "format": "{temperatureF}°F ",
+        "format": "{temperatureC}°C ",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C "
     },
