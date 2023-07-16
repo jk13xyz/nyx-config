@@ -36,6 +36,8 @@
   };
 
   services.getty.autologinUser = "jens";
+  
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     wget
