@@ -35,7 +35,7 @@
     enable = true;
     settings = {
       general = {
-        enable = "Source,Sink,Media,Socket";
+        enable = "Control,Gateway,Headset,Media,Sink,Socket,Source";
       };
     };
   };
