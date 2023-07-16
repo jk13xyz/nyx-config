@@ -30,7 +30,7 @@
   users.users.jens = {
     isNormalUser = true;
     description = "Jens Krieger";
-    extraGroups = [ "jens" "networkmanager" "wheel" ];
+    extraGroups = [ "jens" "audio" "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
   };

@@ -38,8 +38,10 @@
     enable = true;
   };
   
-  hardware.logitech.wireless.enable = true;
-  hardware.logitech.wireless.enableGraphical = true;
+  hardware.logitech.wireless = {
+    enable = true;
+    enableGraphical = true;
+  };
 
   networking.useDHCP = lib.mkDefault true;
 
