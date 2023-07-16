@@ -8,16 +8,16 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 
 ## CURRENT_SETUP
 
-### NYX_PAD
+###  NYX_PAD
     Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
     WM/DE: Wayland + Hyprland
     Shell: zsh + oh-my-zsh + Starship
     OS Version: 23.11-unstable
 
-### NYX_TOP (not yet started)
+### 󰇅 NYX_TOP (not yet started)
     Intel i5-8600K + GeForce 1070Ti + 16 GB RAM
 
-### NYX_SERVER (not yet started)
+###  NYX_SERVER (not yet started)
     AMD Ryzen 7 5700G + 64GB RAM
 
 ## INSTALL:
@@ -30,6 +30,7 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 
 - [github:Misterio77/nix-config](https://github.com/Misterio77/nix-config)
 - [github:Misterio77/nix-starter-config](https://github.com/Misterio77/nix-starter-config)
+- [github:exploitoverload/PwNixOS](https://github.com/exploitoverload/PwNixOS/)
 - [gitlab:felschr/nixos-config](https://gitlab.com/felschr/nixos-config)
 
 #### Waybar Config
