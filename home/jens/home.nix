@@ -18,6 +18,7 @@
   imports =
     [ 
       ../../dotfiles/git/default.nix
+      ../../dotfiles/gpg/default.nix
       ../../dotfiles/firefox/default.nix
       ../../dotfiles/kitty/default.nix
       ../../dotfiles/neofetch/default.nix
