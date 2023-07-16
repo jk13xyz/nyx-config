@@ -24,7 +24,7 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 
     sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#<SYSTEM> --refresh
 
-## CREDITS/INSPIRATION:
+## CREDITS/INSPIRATION
 
 #### NixOS Config/Home Manager
 
