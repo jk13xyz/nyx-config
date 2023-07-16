@@ -6,7 +6,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 30,
-    "modules-left": [ "clock", "hyprland/window" ],
+    "modules-left": [ "clock" ],
     "modules-center": [  ],
     "modules-right": ["temperature", "custom/power_profile","battery","network", "bluetooth", "backlight","pulseaudio","pulseaudio#microphone","tray"],
     "hyprland/window": {
