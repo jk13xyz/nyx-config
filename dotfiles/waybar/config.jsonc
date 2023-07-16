@@ -94,7 +94,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
-        "format-muted": " Muted",
+        "format-muted": "",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
@@ -113,7 +113,7 @@
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "Mic: {volume}%",
-        "format-source-muted": "Mic: ",
+        "format-source-muted": "Mic: ",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
