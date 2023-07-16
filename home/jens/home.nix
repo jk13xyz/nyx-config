@@ -21,22 +21,10 @@
       ../../dotfiles/gpg/default.nix
       ../../dotfiles/firefox/default.nix
       ../../dotfiles/kitty/default.nix
+      ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/default.nix
       ../../dotfiles/zsh/default.nix
-    ];  
-
-  services.clipman = {
-    enable = true;
-  };
-
-  services.flameshot = {
-    enable = true;
-  };
-
-  services.nextcloud-client = {
-    enable = true;
-    startInBackground = true;
-  };
+    ];
 }
