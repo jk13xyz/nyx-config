@@ -7,5 +7,5 @@
     ];
   };
 
-  home.file.".config/neofetch/neofetch.conf".source = ./neofetch.conf;
+  home.file.".config/neofetch/config.conf".source = ./config.conf;
 }
