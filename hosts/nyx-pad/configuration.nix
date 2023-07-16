@@ -42,6 +42,7 @@
     pkgs.mako
     pkgs.rofi
     pkgs.brightnessctl
+    pkgs.pavucontrol
     pkgs.pipewire
     pkgs.pulseaudio
     pkgs.xdg-desktop-portal-hyprland
