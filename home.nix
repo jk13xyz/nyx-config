@@ -20,7 +20,7 @@
     [ 
       ./dotfiles/git.nix
       ./dotfiles/firefox.nix
-      ./dotfiles/neofetch.nix
+      ./dotfiles/neofetch/default.nix
     ];  
 
   programs.kitty = {
