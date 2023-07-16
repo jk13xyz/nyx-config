@@ -124,19 +124,18 @@
     
     "temperature": {
         "thermal-zone": 1,
-        "format": "{temperatureC}°C ",
+        "format": " {temperatureC}°C",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C "
     },
 
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-        "format-ethernet": "{ipaddr} ",
-        "tooltip-format": "{essid} via {gwaddr} ",
+        "format-ethernet": "",
+        "tooltip-format": " {essid} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰲛 ⚠",
-        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr} @ SSID: {essid}"
     },
 
     "bluetooth": {
