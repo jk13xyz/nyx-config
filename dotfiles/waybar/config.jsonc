@@ -131,11 +131,11 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {signalStrength}%",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{essid} - {ifname} via {gwaddr} ",
+        "format-wifi": "",
+        "format-ethernet": "{ipaddr} ",
+        "tooltip-format": "{essid} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "󰲛 ⚠",
         "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
     },
 
