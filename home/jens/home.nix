@@ -19,6 +19,7 @@
     [ 
       ../../dotfiles/git/default.nix
       ../../dotfiles/firefox/default.nix
+      ../../dotfiles/kitty/default.nix
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/default.nix
