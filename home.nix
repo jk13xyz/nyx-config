@@ -20,24 +20,12 @@
       ./dotfiles/git.nix
       ./dotfiles/firefox.nix
       ./dotfiles/neofetch/default.nix
+      ./dotfiles/zsh/default.nix
     ];  
 
   programs.kitty = {
     enable = true;
-    shellIntegration.enableFishIntegration = true;
-  };
-
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    enableAutosuggestions = true;
-    syntaxHighlighting = {
-      enable = true;
-    };
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" ];
-    };
+    shellIntegration.enableZshIntegration = true;
   };
 
   programs.starship = {
