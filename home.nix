@@ -18,23 +18,12 @@
   imports =
     [ 
       ./dotfiles/git/default.nix
-      ./dotfiles/firefox.nix
+      ./dotfiles/firefox/default.nix
       ./dotfiles/neofetch/default.nix
+      ./dotfiles/starship/default.nix
       ./dotfiles/waybar/default.nix
       ./dotfiles/zsh/default.nix
     ];  
-
-  programs.kitty = {
-    enable = true;
-    shellIntegration.enableZshIntegration = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    settings = {
-
-    };
-  };
 
   services.clipman = {
     enable = true;
