@@ -1,17 +1,9 @@
-{ config, pkgs, lib, inputs, ... }:
-
-let
-  addons = inputs.firefox-addons.packages.${pkgs.system};
-in
+{ config, ... }:
 
 {  
   programs.firefox = {
     enable = true;
-    profiles.${config.home.username} = {
-      extensions = with addons; [
-        ublock-origin
-        bitwarden
-      ];      
+    profiles.${config.home.username} = {   
       settings = {
         "browser.disableResetPrompt" = true;
         "browser.download.panel.shown" = true;
