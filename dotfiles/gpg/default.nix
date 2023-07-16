@@ -3,7 +3,7 @@
     enable = true;
     publicKeys = [
         {
-            source = ./secrets/jk13xyz.asc; trust = ultimate;
+            source = ./secrets/jk13xyz.asc; trust = 5;
         }
     ];
     settings = {
