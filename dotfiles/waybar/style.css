@@ -57,6 +57,7 @@ tooltip {
 #battery,
 #pulseaudio,
 #bluetooth,
+#network,
 #temperature,
 #workspaces,
 #tray,
@@ -70,7 +71,6 @@ tooltip {
 }
 
 #network {
-    background: #1e1e2e;
     color: #f9e2af;
     border-radius: 20px;
     margin-right: 10px
