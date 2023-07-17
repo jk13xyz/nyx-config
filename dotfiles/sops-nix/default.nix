@@ -1,3 +1,3 @@
 {
-    home.file.".sops.yml".source = ./.sops.yaml;
+    home.file."./.sops.yml".source = ./.sops.yaml;
 }
