@@ -43,6 +43,7 @@
     wget
     pkgs.brightnessctl
     pkgs.clipman
+    pkgs.flameshot
     pkgs.mako
     pkgs.polkit
     pkgs.rofi

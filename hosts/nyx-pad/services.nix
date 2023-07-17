@@ -1,17 +1,7 @@
 {pkgs, ...}:
 {  
-  services = {
-    flameshot = {
-      enable = true;
-    };
-
     getty= {
       autologinUser = "jens";
-    };
-
-    nextcloud-client = {
-      enable = true;
-      startInBackground = true;
     };
 
     pcscd = {
