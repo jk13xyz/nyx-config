@@ -1,8 +1,6 @@
 {pkgs, ...}:
 {
-    home = {
-        packages = with pkgs; [
-        pkgs.hyprpaper
-        ];
+    programs.hyprpaper = {
+        enable = true;
     };
 }
