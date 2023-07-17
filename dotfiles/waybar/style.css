@@ -126,9 +126,8 @@ tooltip {
 
 #network {
     color: #f9e2af;
-    border-radius: 20px 0px 0px 20px;
-    border-left: 0px;
-    border-right: 0px;
+    border-radius: 20px;
+    margin-right: 10px
 }
 
 #bluetooth {
