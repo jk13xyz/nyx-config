@@ -71,9 +71,9 @@ tooltip {
 
 #network {
     background: #1e1e2e;
-    padding: 0px 10px;
-    margin: 0;
-    margin-top: 5px;
+    color: #f9e2af;
+    border-radius: 20px;
+    margin-right: 10px
 }
 
 #temperature {
@@ -122,12 +122,6 @@ tooltip {
     border-right: 0px;
     transition: 0.3s;
     padding-left: 7px;
-}
-
-#network {
-    color: #f9e2af;
-    border-radius: 20px;
-    margin-right: 10px
 }
 
 #bluetooth {
