@@ -130,11 +130,11 @@
     },
 
     "network": {
-        "format-wifi": " ",
-        "format-ethernet": " ",
+        "format-wifi": "",
+        "format-ethernet": "",
         "tooltip-format": " {essid} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󰲛 ⚠ ",
+        "format-disconnected": "󰲛 ⚠",
         "format-alt": "{ifname}: {ipaddr} @ SSID: {essid}"
     },
 
