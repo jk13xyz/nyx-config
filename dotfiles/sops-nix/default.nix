@@ -1,4 +1,4 @@
 { config, ... }:
 {
-    home.file."${config.xdg.configHome}/.sops.yaml".source = ./.sops.yaml;
+    home.file."./.sops.yaml".source = ./.sops.yaml;
 }
