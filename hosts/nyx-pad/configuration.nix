@@ -9,6 +9,7 @@
       ../common/locale.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix
+      ../../dotfiles/zsh/default.nix      
     ];
 
   nix = {
@@ -36,8 +37,6 @@
     packages = with pkgs; [];
     shell = pkgs.zsh;
   };
-  
-  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     wget

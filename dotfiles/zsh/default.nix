@@ -11,5 +11,21 @@
         enable = true;
         plugins = [ "git" ];
         };
+        shellAliases = {
+            # General
+            c = "clear";
+            ll = "ls -al";
+
+            # Git
+            commit = "git commit -m $1";
+            fetch = "git fetch";
+            push = "git push";
+            pull = "git pull";
+
+            # NixOS
+            nshell = "nix-shell -p $1";
+            install = "nix-env -iA $1";
+            nsw = "sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#$1 --refresh";
+        };
     };
 }
