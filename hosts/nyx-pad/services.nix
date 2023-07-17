@@ -1,5 +1,6 @@
 {pkgs, ...}:
-{  
+{
+  services = {  
     getty= {
       autologinUser = "jens";
     };
