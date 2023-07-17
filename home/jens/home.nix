@@ -23,6 +23,7 @@
       ../../dotfiles/kitty/default.nix
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
+      ../../dotfiles/neovim/default.nix
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/default.nix
       ../../dotfiles/zsh/default.nix
