@@ -3,12 +3,12 @@
 {
   imports =
     [ 
+      ./hardware-configuration.nix
+      ./services.nix
       ../common/fonts.nix      
       ../common/locale.nix
-      ./hardware-configuration.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix
-      ../../home/jens/services.nix
     ];
 
   nix = {
@@ -36,8 +36,6 @@
     packages = with pkgs; [];
     shell = pkgs.zsh;
   };
-
-  services.getty.autologinUser = "jens";
   
   programs.zsh.enable = true;
 
@@ -58,18 +56,7 @@
     yubikey-personalization
     yubikey-manager
   ];
-
-  services.udev.packages = with pkgs; [
-    yubikey-personalization
-  ];
-
-  services.pcscd.enable = true;
-
-  services.pipewire = {
-     enable = true;
-     wireplumber.enable = true;
-  };
-  
+    
   system.stateVersion = "23.05";
 
 }
