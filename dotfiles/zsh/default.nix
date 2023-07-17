@@ -3,13 +3,11 @@
     programs.zsh = {
         enable = true;
         enableCompletion = true;
-        autosuggestions = {
-            enable = true;
-        };
+        enableAutosuggestions = enable = true;
         syntaxHighlighting = {
         enable = true;
         };
-        ohMyZsh = {
+        oh-my-zsh = {
             enable = true;
             plugins = [ "git" ];
         };
