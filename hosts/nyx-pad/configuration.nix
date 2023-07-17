@@ -41,6 +41,7 @@
 
   environment.systemPackages = with pkgs; [
     wget
+    pkgs.age
     pkgs.brightnessctl
     pkgs.clipman
     pkgs.flameshot
@@ -50,6 +51,7 @@
     pkgs.pavucontrol
     pkgs.pipewire
     pkgs.pulseaudio
+    pkgs.sops
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip
