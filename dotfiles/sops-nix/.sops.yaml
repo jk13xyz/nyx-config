@@ -1,8 +1,10 @@
 keys:
   - &user_jens_gpg C577B6C556EF76FA78E1B271E2AFF28AB89D48EC
+  - &user_jens_age age187z2hpehtsgu7us36c6ul8gpzxa422wn2fchnq6dtpp5zd5gnfjsumvyaw
 creation_rules:
   - path_regex: secrets/[^/]+\.yaml$
     key_groups:
       - pgp:
           - *user_jens_gpg
         age:
+          - *user_jens_age
