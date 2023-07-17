@@ -18,9 +18,7 @@
     [ 
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
-      ../../dotfiles/firefox/default.nix
-      ../../dotfiles/hyprland/default.nix
-      ../../dotfiles/hyprland/hyprpaper/default.nix            
+      ../../dotfiles/firefox/default.nix        
       ../../dotfiles/kitty/default.nix
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
