@@ -1,6 +1,6 @@
 {pkgs, ...}:
 {
-    programs.hyprpaper = {
-        enable = true;
-    };
+    environment.systemPackages = [
+        pkgs.hyprpaper
+    ];
 }
