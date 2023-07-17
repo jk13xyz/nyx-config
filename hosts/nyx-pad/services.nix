@@ -30,7 +30,7 @@
       packages = with pkgs; [
         yubikey-personalization
       ];
-    }
+    };
 
     thermald = {
       enable = true;
