@@ -111,8 +111,8 @@
     },
 
     "pulseaudio#microphone": {
-        "format": "{icon}",
-        "format-source-muted": "",
+        "format": "{icon} ",
+        "format-source-muted": " ",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
