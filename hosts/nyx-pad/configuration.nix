@@ -8,6 +8,7 @@
       ./hardware-configuration.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix
+      ../../home/jens/services.nix
     ];
 
   nix = {
