@@ -56,7 +56,6 @@ tooltip {
 #clock,
 #battery,
 #pulseaudio,
-#network,
 #bluetooth,
 #temperature,
 #workspaces,
@@ -68,6 +67,10 @@ tooltip {
     margin: 0;
     margin-top: 5px;
     border: 1px solid #181825;
+}
+
+#network {
+    background: #1e1e2e;
 }
 
 #temperature {
