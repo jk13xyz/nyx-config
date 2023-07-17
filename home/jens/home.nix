@@ -24,7 +24,7 @@
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
-      ../../dotfiles/sops/default.nix
+      ../../dotfiles/sops-nix/default.nix
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/default.nix
       ../../dotfiles/zsh/default.nix
