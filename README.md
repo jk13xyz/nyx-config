@@ -27,16 +27,19 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 ## CREDITS/INSPIRATION
 
 #### NixOS Config/Home Manager
-
 - [github:Misterio77/nix-config](https://github.com/Misterio77/nix-config)
 - [github:Misterio77/nix-starter-config](https://github.com/Misterio77/nix-starter-config)
 - [github:exploitoverload/PwNixOS](https://github.com/exploitoverload/PwNixOS/)
 - [gitlab:felschr/nixos-config](https://gitlab.com/felschr/nixos-config)
 
 #### Waybar Config
-
 - [github:vidowner/hyprland-hdready](https://github.com/vidowner/hyprland-hdready)
 
 #### Starship Config
-
 - [Nerd Font Preset](https://starship.rs/presets/nerd-font.html)
+
+#### Misc.
+- [github:drduh/YubiKey-Guide](https://github.com/drduh/YubiKey-Guide)
+
+#### Wallpaper:
+- [wallpaperup](https://www.wallpaperup.com/196208/scientific_space_planet_galaxy_stars_mac_ox_ultrahd_4k_wallpaper.html)
