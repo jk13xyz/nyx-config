@@ -1,8 +1,14 @@
 {config, pkgs, ...}:
 {  
-  programs.hyprland = {
-    enable = true;
-  };
+    home = {
+        packages = with pkgs; [
+        pkgs.hyprland
+        ];
+    };
 
-#  home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
+    programs.hyprland = {
+        enable = true;
+    };
+
+    #  home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
 }
