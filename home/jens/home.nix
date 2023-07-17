@@ -18,6 +18,7 @@
     [ 
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
+      ../../dotfiles/hyprland/hyprland.nix
       ../../dotfiles/firefox/default.nix        
       ../../dotfiles/kitty/default.nix
       ../../dotfiles/ncspot/default.nix

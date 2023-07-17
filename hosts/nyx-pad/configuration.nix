@@ -7,6 +7,7 @@
       ../common/locale.nix
       ./hardware-configuration.nix
       ../../dotfiles/hyprland/default.nix
+      ../../dotfiles/hyprland/hyprpaper/default.nix
     ];
 
   nix = {
