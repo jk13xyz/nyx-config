@@ -42,6 +42,7 @@
   environment.systemPackages = with pkgs; [
     wget
     pkgs.brightnessctl
+    pkgs.clipman
     pkgs.mako
     pkgs.polkit
     pkgs.rofi
@@ -56,7 +57,7 @@
     yubikey-personalization
     yubikey-manager
   ];
-    
+
   system.stateVersion = "23.05";
 
 }

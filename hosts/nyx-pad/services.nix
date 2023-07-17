@@ -1,10 +1,6 @@
 {pkgs, ...}:
 {  
   services = {
-    clipman = {
-      enable = true;
-    };
-
     flameshot = {
       enable = true;
     };
