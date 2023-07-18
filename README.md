@@ -36,7 +36,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
     sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#<SYSTEM> --refresh
 
-## CREDITS/INSPIRATION
+## CREDITS/RESOURCES
 
 #### NixOS Config/Home Manager
 - [github:Misterio77/nix-config](https://github.com/Misterio77/nix-config)
@@ -53,6 +53,10 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 #### General Resources
 - [nix.dev](https://nix.dev)
 - [Zero to Nix](https://zero-to-nix.com)
+
+#### Home Manager
+- [github:nix-community | Home Manager Options](https://nix-community.github.io/home-manager/options.html)
+- [github:mipmip | Home Manager Options Search](https://mipmip.github.io/home-manager-option-search/?query=ncspot)
 
 #### Misc.
 - [github:drduh/YubiKey-Guide](https://github.com/drduh/YubiKey-Guide)
