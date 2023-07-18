@@ -14,13 +14,8 @@
 
   programs.home-manager.enable = true;
 
-  home-manager.sharedModules = [
-    <sops-nix/modules/home-manager/sops.nix>
-  ];
-
   imports =
     [ 
-      <sops-nix/modules/home-manager/sops.nix>
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
       ../../dotfiles/hyprland/hyprland.nix
@@ -34,11 +29,4 @@
       ../../dotfiles/zsh/default.nix
       ../../secrets/default.nix      
     ];
-
-  sops = {
-    defaultSopsFile = ../../secrets/secrets.yaml;
-    gnupg = {
-      sshKeyPaths = [];
-    };
-  }; 
 }
