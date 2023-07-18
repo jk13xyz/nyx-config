@@ -14,6 +14,10 @@
 
   programs.home-manager.enable = true;
 
+  home-manager.sharedModules = [
+    <sops-nix/modules/home-manager/sops.nix>
+  ];  
+
   imports =
     [ 
       ../../dotfiles/git/default.nix
