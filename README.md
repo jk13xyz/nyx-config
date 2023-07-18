@@ -2,9 +2,21 @@
 
 I'm currently in the process of switching my systems to NixOS. 
 
-This repo is probably far from the textbook example of how one could (or perhaps should) setup their Nix configs, but this is part of the learning process. Most importantly, though, while it works for me right now, this repo is far from finished. It's very rough and barely usable still.
+This repo is probably far from the textbook example of how one could (or perhaps should) setup their Nix configs, but this is part of the learning process. Most importantly, though, while it somewhat works for me right now, this repo is far from finished. It's very rough and barely usable still.
 
-So, bottom line: Use it as inspiration, but don't use it for production.
+So, bottom line: Use it as inspiration, **don't use it for production.**
+
+## GOAL/FEATURES
+- Working modular configs for all my systems
+- Leveraging Home Manager to create replicable environments
+- Integrating sops-nix for secret management
+- Using Wayland WM
+- A combination of Hyprland + Hyprpaper + Waybar + Rofi + Mako
+
+## CURRENT_ISSUES
+- Clipboard doesn't yet work in Hyprland
+- Use of Bluetooth Audio doesn't work yet
+- Most features are not yet (fully) implemented
 
 ## CURRENT_SETUP
 
@@ -20,7 +32,7 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 ### NYX_SERVER (not yet started)
     AMD Ryzen 7 5700G + 64GB RAM
 
-## INSTALL:
+## INSTALL
 
     sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#<SYSTEM> --refresh
 
