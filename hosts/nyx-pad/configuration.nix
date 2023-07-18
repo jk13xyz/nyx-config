@@ -7,7 +7,7 @@
       ./services.nix
       ../common/fonts.nix      
       ../common/locale.nix
-      ../common/sops.nix
+#      ../common/sops.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix
       ../../dotfiles/zsh/default.nix      
@@ -29,8 +29,7 @@
 
   networking.hostName = "nyx-pad";
   networking.networkmanager.enable = true;
-#  networking.wireless.enable = true;
-
+  
   users.users.jens = {
     isNormalUser = true;
     description = "Jens Krieger";
