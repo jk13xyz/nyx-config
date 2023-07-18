@@ -3,6 +3,7 @@
 {
   imports =
     [ 
+      <sops-nix/modules/sops>
       ./hardware-configuration.nix
       ./services.nix
       ../common/fonts.nix      
@@ -61,5 +62,12 @@
   ];
 
   system.stateVersion = "23.05";
+
+  sops = {
+    defaultSopsFile = ../../secrets/secrets.yaml;
+    gnupg = {
+      sshKeyPaths = [];
+    };
+  }; 
 
 }
