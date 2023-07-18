@@ -9,6 +9,11 @@
       enable = true;
     };
 
+    pipewire = {
+      enable = true;
+      wireplumber.enable = true; 
+    };
+
     udev = {
       packages = with pkgs; [
         yubikey-personalization
