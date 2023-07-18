@@ -3,12 +3,10 @@
 {
   imports =
     [ 
-      <sops-nix/modules/sops>
       ./hardware-configuration.nix
       ./services.nix
       ../common/fonts.nix      
       ../common/locale.nix
-      ../common/sops.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix
       ../../dotfiles/zsh/default.nix      
