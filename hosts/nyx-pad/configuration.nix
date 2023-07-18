@@ -2,7 +2,8 @@
 
 {
   imports =
-    [
+    [ 
+      <sops-nix/modules/sops>
       ./hardware-configuration.nix
       ./services.nix
       ../common/fonts.nix      
@@ -59,6 +60,13 @@
     yubikey-personalization
     yubikey-manager
   ];
-  
+
+  sops = {
+    defaultSopsFile = ../../secrets/secrets.yaml;
+    gnupg = {
+      sshKeyPaths = [];
+    };
+  }; 
+
   system.stateVersion = "23.11";
 }
