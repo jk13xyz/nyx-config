@@ -61,8 +61,6 @@
     yubikey-manager
   ];
 
-  system.stateVersion = "23.05";
-
   sops = {
     defaultSopsFile = ../../secrets/secrets.yaml;
     gnupg = {
@@ -70,4 +68,5 @@
     };
   }; 
 
+  system.stateVersion = "23.05";
 }
