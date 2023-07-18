@@ -38,6 +38,10 @@ So, bottom line: Use it as inspiration, but don't use it for production.
 #### Starship Config
 - [Nerd Font Preset](https://starship.rs/presets/nerd-font.html)
 
+#### General Resources
+- [nix.dev](https://nix.dev)
+- [Zero to Nix](https://zero-to-nix.com)
+
 #### Misc.
 - [github:drduh/YubiKey-Guide](https://github.com/drduh/YubiKey-Guide)
 
