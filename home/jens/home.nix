@@ -16,10 +16,11 @@
 
   home-manager.sharedModules = [
     <sops-nix/modules/home-manager/sops.nix>
-  ];  
+  ];
 
   imports =
     [ 
+      <sops-nix/modules/home-manager/sops.nix>
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
       ../../dotfiles/hyprland/hyprland.nix
@@ -28,9 +29,16 @@
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
-      ../../dotfiles/sops-nix/default.nix
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/default.nix
       ../../dotfiles/zsh/default.nix
+      ../../secrets/default.nix      
     ];
+
+  sops = {
+    defaultSopsFile = ../../secrets/secrets.yaml;
+    gnupg = {
+      home = 
+    };
+  }; 
 }
