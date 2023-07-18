@@ -1,4 +1,4 @@
 { config, ... }:
 {
-    home.file."../.sops.yaml".source = ./.sops.yaml;
+    home.file."./.sops.yaml".source = ./.sops.yaml;
 }
