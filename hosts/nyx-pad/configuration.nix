@@ -58,5 +58,10 @@
     yubikey-manager
   ];
 
+  sops.defaultSopsFile = ../../secrets/secrets.yaml;
+  sops.age.sshKeyPaths = [ ./secrets/nyx-pad.pub ];
+  sops.age.generateKey = true;
+#  sops.secrets.user = { };
+
   system.stateVersion = "23.05";
 }

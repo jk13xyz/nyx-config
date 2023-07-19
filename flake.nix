@@ -48,6 +48,7 @@
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             agenix.nixosModules.default
+            inputs.sops-nix.nixosModules.sops
 	    {
 	      home-manager.users.${username} = import ./home/${username}/home.nix;
 	    }
@@ -59,22 +60,9 @@
         "jens@nyx-pad" = lib.homeManagerConfiguration {
           useGlobalPkgs = true;
           useUserPackages = true;
-          users.${username} = import ./home/jens/home.nix;
-                modules = [
-                  ./home/jens/home.nix
-                  inputs.sops-nix.homeManagerModules.sops
-                ];
-                pkgs = nixpkgs.${system};
-          sops = {
-            defaultSopsFile = ./secrets/secrets.yaml;
-            age = {
-              sshKeyPaths = ./hosts/nyx-pad/secrets/nyx-pad.pub; 
-            };
-                  generateKey = true;
-          };
+        };
         extraSpecialArgs = {
           inherit inputs;
-        };
         };
       };
   };
