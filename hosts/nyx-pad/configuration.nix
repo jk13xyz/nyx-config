@@ -49,6 +49,7 @@
     pkgs.pavucontrol
     pkgs.pipewire
     pkgs.pulseaudio
+    pkgs.ssh-to-age
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip
@@ -59,7 +60,7 @@
   ];
 
   sops.defaultSopsFile = ../../secrets/secrets.yaml;
-  sops.age.sshKeyPaths = [ ./secrets/nyx-pad.pub ];
+  sops.age.sshKeyPaths = [ "/home/jens/.ssh/id_ed25519" ];
   sops.age.generateKey = true;
 #  sops.secrets.user = { };
 
