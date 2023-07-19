@@ -47,12 +47,11 @@
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             agenix.nixosModules.default
-            {
+#            {
 #              home-manager.useGlobalPkgs = true;
 #              home-manager.useUserPackages = true;
 #              home-manager.users.jens = import ./home/jens/home.nix;
-#              }
-          ];
+#           }
         };
       };
 
