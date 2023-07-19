@@ -39,23 +39,34 @@
       lib = nixpkgs.lib;
 
     in {
-       nixosConfigurations = {
-         nyx-pad  = lib.nixosSystem {
+      nixosConfigurations = {
+        nyx-pad  = lib.nixosSystem {
           inherit system;
           modules = [
             ./hosts/nyx-pad/configuration.nix
-#            ./home/jens/home.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
-#            inputs.sops-nix.homeManagerModules.sops
             agenix.nixosModules.default
             {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.jens = import ./home/jens/home.nix;
-              }
+#              home-manager.useGlobalPkgs = true;
+#              home-manager.useUserPackages = true;
+#              home-manager.users.jens = import ./home/jens/home.nix;
+#              }
           ];
-         };
-       };
-     };
+        };
+      };
+
+      homeConfigurations = {
+        "jens@nyx-pad" = lib.homeManagerConfiguration {
+          modules = [
+            ./home/jens/home.nix
+            inputs.sops-nix.homeManagerModules.sops
+          ];
+          pkgs = pkgs.${system}
+          extraSpecialArgs = {
+            inherit inputs outputs;
+          };
+        };
+      };
+    };
 }
