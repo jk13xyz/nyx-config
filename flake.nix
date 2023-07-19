@@ -51,9 +51,10 @@
 #              home-manager.useGlobalPkgs = true;
 #              home-manager.useUserPackages = true;
 #              home-manager.users.jens = import ./home/jens/home.nix;
-#           }
-          };
+#             }
+          ];
         };
+      };
 
       homeConfigurations = {
         "jens@nyx-pad" = lib.homeManagerConfiguration {
