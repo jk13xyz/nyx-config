@@ -26,6 +26,6 @@
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
-      ../../hosts/nyx-pad/secrets.nix      
+#      ../../hosts/nyx-pad/secrets.nix      
     ];
 }
