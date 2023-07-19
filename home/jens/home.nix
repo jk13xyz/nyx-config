@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home = {
@@ -14,8 +14,7 @@
 
   programs.home-manager.enable = true;
 
-  imports =
-    [ 
+  imports = [ 
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
       ../../dotfiles/hyprland/hyprland.nix
@@ -25,7 +24,7 @@
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
       ../../dotfiles/starship/default.nix
-      ../../dotfiles/waybar/default.nix
+      ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
 #      ../../hosts/nyx-pad/secrets.nix      
     ];
