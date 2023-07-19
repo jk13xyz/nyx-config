@@ -1,4 +1,5 @@
 {
+
   description = "NixOS configuration";
   
     inputs = {
@@ -21,8 +22,7 @@
       agenix = {
         url = "github:ryantm/agenix";
       };
-
-      
+     
     };
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, sops-nix, ... }: 

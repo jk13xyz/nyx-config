@@ -24,10 +24,8 @@
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
       ../../dotfiles/starship/default.nix
-      ../../dotfiles/waybar/default.nix
+      ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
       ../../hosts/nyx-pad/secrets.nix      
     ];
-
-  sops.secret.passwd.jens = {};
 }
