@@ -47,7 +47,7 @@
 #            ./home/jens/home.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
-            inputs.sops-nix.homeManagerModules.sops
+#            inputs.sops-nix.homeManagerModules.sops
             agenix.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
