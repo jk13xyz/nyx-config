@@ -17,6 +17,7 @@
 
       sops-nix = {
         url = "github:Mic92/sops-nix";
+	inputs.nixpkgs.follows = "nixpkgs";
       };
 
       agenix = {
@@ -25,7 +26,7 @@
      
     };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, sops-nix, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       username = "jens";
@@ -50,7 +51,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.jens = import ./home/jens/home.nix;
+              home-manager.users.${username} = import ./home/jens/home.nix;
             }
           ];
         };

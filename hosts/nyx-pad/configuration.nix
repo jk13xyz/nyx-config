@@ -49,7 +49,6 @@
     pkgs.pavucontrol
     pkgs.pipewire
     pkgs.pulseaudio
-    pkgs.sops
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip

@@ -5,6 +5,7 @@
     username = lib.mkDefault "jens";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
+      pkgs.sops
     ];
     stateVersion = lib.mkDefault "23.05";
     sessionVariables = {
@@ -28,4 +29,10 @@
       ../../dotfiles/zsh/default.nix
 #      ../../hosts/nyx-pad/secrets.nix      
     ];
+
+#  sops.defaultSopsFile = "../../secrets/secrets.yaml";
+#  sops.age.sshKeyPaths = [ "../../hosts/nyx-pad/secrets/nyx-pad.pub" ];
+#  sops.age.keyFile = /home/jens/.config/sops/age/keys.txt;
+#  sops.generateKey = true;
+#  sops.secrets.user.jens.passwd = "/home/jens/test.txt";
 }
