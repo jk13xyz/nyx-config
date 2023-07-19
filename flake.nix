@@ -44,7 +44,7 @@
           inherit system;
           modules = [
             ./hosts/nyx-pad/configuration.nix
-            ./home/jens/home.nix
+#            ./home/jens/home.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             inputs.sops-nix.homeManagerModules.sops
