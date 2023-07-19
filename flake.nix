@@ -44,10 +44,10 @@
           inherit system;
           modules = [
             ./hosts/nyx-pad/configuration.nix
+            ./home/jens/home.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
-#           sops-nix.nixosModules.sops
-#           sops-nix.homeManagerModules.sops
+            inputs.sops-nix.homeManagerModules.sops
             agenix.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
