@@ -27,13 +27,8 @@
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
-      ../../secrets/default.nix
-#      ../../hosts/nyx-pad/secrets.nix      
+      ../../secrets/default.nix     
     ];
 
-#  sops.defaultSopsFile = "../../secrets/secrets.yaml";
-#  sops.age.sshKeyPaths = [ "../../hosts/nyx-pad/secrets/nyx-pad.pub" ];
-#  sops.age.keyFile = /home/jens/.config/sops/age/keys.txt;
-#  sops.generateKey = true;
-#  sops.secrets.user.jens.passwd = "/home/jens/test.txt";
+#  sops.secrets.user.jens.passwd = { };
 }
