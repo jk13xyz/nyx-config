@@ -28,7 +28,6 @@
 
   networking.hostName = "nyx-pad";
   networking.networkmanager.enable = true;
-#  networking.wireless.enable = true;
 
   users.users.jens = {
     isNormalUser = true;
@@ -59,13 +58,6 @@
     yubikey-personalization
     yubikey-manager
   ];
-
-  sops = {
-    defaultSopsFile = ../../secrets/secrets.yaml;
-    gnupg = {
-      sshKeyPaths = [];
-    };
-  }; 
 
   system.stateVersion = "23.11";
 }
