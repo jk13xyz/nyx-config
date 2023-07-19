@@ -62,7 +62,7 @@
             ./home/jens/home.nix
             inputs.sops-nix.homeManagerModules.sops
           ];
-          pkgs = pkgs.${system}
+          pkgs = pkgs.${system};
           extraSpecialArgs = {
             inherit inputs outputs;
           };
