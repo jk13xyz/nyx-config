@@ -1,4 +1,4 @@
-{config, inputs, sops-nix, ...}:
+{ config, inputs, sops-nix, home, ...}:
 
 {
   imports = [

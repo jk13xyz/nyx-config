@@ -46,8 +46,8 @@
             ./hosts/nyx-pad/configuration.nix
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
-            sops-nix.nixosModules.sops
-	          sops-nix.homeManagerModule
+#           sops-nix.nixosModules.sops
+#           sops-nix.homeManagerModules.sops
             agenix.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
