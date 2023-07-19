@@ -221,6 +221,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1689631193,
+        "narHash": "sha256-AGSkBZaiTODQc8eT1rZDrQIjtb8JtFwJ0wVPzArlrnM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "57695599bdc4f7bfe5d28cfa23f14b3d8bdf8a5f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "agenix": "agenix",
@@ -234,9 +250,7 @@
     },
     "sops-nix": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_4",
         "nixpkgs-stable": "nixpkgs-stable_2"
       },
       "locked": {
