@@ -57,24 +57,24 @@
 
       homeConfigurations = {
         "jens@nyx-pad" = lib.homeManagerConfiguration {
-	  useGlobalPkgs = true;
-	  useUserPackages = true;
-	  users.${username} = import ./home/jens/home.nix;
-          modules = [
-            ./home/jens/home.nix
-            inputs.sops-nix.homeManagerModules.sops
-          ];
-          pkgs = nixpkgs.${system};
-	  sops = {
-	    defaultSopsFile = ./secrets/secrets.yaml;
-	    age = {
-	      sshKeyPaths = ./hosts/nyx-pad/secrets/nyx-pad.pub; 
- 	    };
-            generateKey = true;
-	  };
-          extraSpecialArgs = {
-            inherit inputs;
+          useGlobalPkgs = true;
+          useUserPackages = true;
+          users.${username} = import ./home/jens/home.nix;
+                modules = [
+                  ./home/jens/home.nix
+                  inputs.sops-nix.homeManagerModules.sops
+                ];
+                pkgs = nixpkgs.${system};
+          sops = {
+            defaultSopsFile = ./secrets/secrets.yaml;
+            age = {
+              sshKeyPaths = ./hosts/nyx-pad/secrets/nyx-pad.pub; 
+            };
+                  generateKey = true;
           };
+        extraSpecialArgs = {
+          inherit inputs;
+        };
         };
       };
   };
