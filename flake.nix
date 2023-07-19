@@ -53,7 +53,6 @@
 #              home-manager.users.jens = import ./home/jens/home.nix;
 #           }
         };
-      };
 
       homeConfigurations = {
         "jens@nyx-pad" = lib.homeManagerConfiguration {
@@ -68,4 +67,5 @@
         };
       };
     };
+  };
 }
