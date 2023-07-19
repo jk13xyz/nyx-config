@@ -52,6 +52,7 @@
 #              home-manager.useUserPackages = true;
 #              home-manager.users.jens = import ./home/jens/home.nix;
 #           }
+          };
         };
 
       homeConfigurations = {
