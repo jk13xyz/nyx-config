@@ -48,6 +48,7 @@
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             sops-nix.nixosModules.sops
+	    sops-nix.homeManagerModule
             agenix.nixosModules.default
             {
               home-manager.useGlobalPkgs = true;
