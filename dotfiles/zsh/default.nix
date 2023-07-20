@@ -21,7 +21,7 @@
             ];
         };
 
-        initExtra = [ { "POWERLINE9K_DISABLE_CONFIGURATION_WIZARD=TRUE" } ];      
+        initExtra = "POWERLINE9K_DISABLE_CONFIGURATION_WIZARD=TRUE";
 
         shellAliases = {
             # General
