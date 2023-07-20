@@ -8,8 +8,7 @@
       ../common/fonts.nix      
       ../common/locale.nix
       ../../dotfiles/hyprland/default.nix
-      ../../dotfiles/hyprland/hyprpaper/default.nix
-      ../../dotfiles/zsh/default.nix      
+      ../../dotfiles/hyprland/hyprpaper/default.nix   
     ];
 
   nix = {
@@ -56,6 +55,9 @@
     pkgs.swappy
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
+    pkgs.zsh-autosuggestions
+    pkgs.zsh-syntax-highlighting
+    pkgs.zsh-powerlevel10k    
     pkgs.unzip
     yubikey-personalization
     yubikey-manager

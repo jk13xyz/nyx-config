@@ -6,9 +6,6 @@
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
       pkgs.sops
-      pkgs.zsh-autosuggestions
-      pkgs.zsh-syntax-highlighting
-      pkgs.zsh-powerlevel10k
     ];
     stateVersion = lib.mkDefault "23.05";
     sessionVariables = {
