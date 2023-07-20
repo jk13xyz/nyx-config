@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -55,8 +55,6 @@
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip
-    pkgs.zsh-autocomplete
-    pkgs.zsh-syntax-highlighting
     yubikey-personalization
     yubikey-manager
   ];

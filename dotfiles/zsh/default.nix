@@ -1,16 +1,18 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
     programs.zsh = {
         enable = true;
         enableCompletion = true;
         enableAutosuggestions = true;
         syntaxHighlighting = {
-        enable = true;
+            enable = true;
         };
+
         oh-my-zsh = {
             enable = true;
-            plugins = [ "git" ];
+            plugins = [ "git"  ];
         };
+
         shellAliases = {
             # General
             c = "clear";
@@ -29,4 +31,5 @@
             nsw = "sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#$1 --refresh";
         };
     };
+
 }

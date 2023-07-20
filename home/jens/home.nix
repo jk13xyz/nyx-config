@@ -6,6 +6,9 @@
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     packages = with pkgs; [
       pkgs.sops
+      pkgs.zsh-autosuggestions
+      pkgs.zsh-syntax-highlighting
+      pkgs.zsh-powerlevel10k
     ];
     stateVersion = lib.mkDefault "23.05";
     sessionVariables = {
@@ -24,7 +27,6 @@
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
-      ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
       ../../secrets/default.nix     
