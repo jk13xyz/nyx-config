@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
     programs.zsh = {
-        enable = true;
         enableCompletion = true;
         enableAutosuggestions = true;
         syntaxHighlighting = {
@@ -11,8 +10,15 @@
         oh-my-zsh = {
             enable = true;
             plugins = [ "gh" "git" "git-auto-fetch" ];
-#            theme = "powerlevel10k/powerlevel10k";
+            theme = "powerlevel10k/powerlevel10k";
         };
+
+        zplug = {
+            enable = true;
+            plugins = [
+                { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ];  }
+            ];
+        };        
 
         shellAliases = {
             # General
@@ -20,7 +26,7 @@
             ll = "ls -al";
 
             # Git
-	    add = "git add --all";
+	        add = "git add --all";
             commit = "git commit -m $1";
             fetch = "git fetch";
             push = "git push";

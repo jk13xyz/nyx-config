@@ -28,7 +28,7 @@
       ../../dotfiles/neofetch/default.nix
       ../../dotfiles/neovim/default.nix
       ../../dotfiles/waybar/config.nix
-      ../../dotfiles/zsh/plugins.nix
+      ../../dotfiles/zsh/default.nix
       ../../secrets/default.nix     
     ];
 
