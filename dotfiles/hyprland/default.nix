@@ -2,7 +2,7 @@
 {  
     programs.hyprland = {
         enable = true;
-        xwayland = true;
+        xwayland.enable = true;
     };
 
     environment.sessionVariables = {
