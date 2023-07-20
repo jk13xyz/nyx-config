@@ -42,7 +42,7 @@
     pkgs.age
     pkgs.brightnessctl
     pkgs.clipman
-    pkgs.flameshot
+    pkgs.grim
     pkgs.mako
     pkgs.polkit
     pkgs.rofi
@@ -50,6 +50,8 @@
     pkgs.pipewire
     pkgs.pulseaudio
     pkgs.ssh-to-age
+    pkgs.slurp
+    pkgs.swappy
     pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip
