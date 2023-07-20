@@ -19,7 +19,9 @@
             plugins = [
                 { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ];  }
             ];
-        };        
+        };
+
+        initExtra = [ "POWERLINE9K_DISABLE_CONFIGURATION_WIZARD=TRUE" ];      
 
         shellAliases = {
             # General
