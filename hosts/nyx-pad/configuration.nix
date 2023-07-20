@@ -50,7 +50,6 @@
     pkgs.pipewire
     pkgs.pulseaudio
     pkgs.ssh-to-age
-    pkgs.xdg-desktop-portal-hyprland
     pkgs.zip
     pkgs.unzip
     pkgs.zsh-autocomplete
