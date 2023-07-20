@@ -50,9 +50,10 @@ Straight from Github:
 ## CREDITS/RESOURCES
 
 #### NixOS Config/Home Manager
+- [github:exploitoverload/PwNixOS](https://github.com/exploitoverload/PwNixOS/)
 - [github:Misterio77/nix-config](https://github.com/Misterio77/nix-config)
 - [github:Misterio77/nix-starter-config](https://github.com/Misterio77/nix-starter-config)
-- [github:exploitoverload/PwNixOS](https://github.com/exploitoverload/PwNixOS/)
+- [github:NobbZ/nixos-config](https://github.com/NobbZ/nixos-config)
 - [gitlab:felschr/nixos-config](https://gitlab.com/felschr/nixos-config)
 
 #### Waybar Config
