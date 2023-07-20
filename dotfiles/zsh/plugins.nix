@@ -5,7 +5,7 @@
                 {
                 name = "powerlevel10k";
                 src = pkgs.zsh-powerlevel10k;
-                file = "${pkgs.powerline10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+                file = "${pkgs.zsh-powerline10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
                 }
         ];
     };
