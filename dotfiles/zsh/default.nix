@@ -17,6 +17,7 @@
             ll = "ls -al";
 
             # Git
+	    add = "git add --all";
             commit = "git commit -m $1";
             fetch = "git fetch";
             push = "git push";

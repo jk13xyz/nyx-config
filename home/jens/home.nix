@@ -27,7 +27,7 @@
       ../../dotfiles/starship/default.nix
       ../../dotfiles/waybar/config.nix
       ../../dotfiles/zsh/default.nix
-#      ../../secrets/default.nix     
+      ../../secrets/default.nix     
     ];
 
 #  sops.secrets.user.jens.passwd = { };
