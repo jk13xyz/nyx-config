@@ -10,6 +10,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 - Working modular configs for all my systems
 - Leveraging Home Manager to create replicable environments
 - Integrating sops-nix for secret management
+- Script-based key handling for sops-nix
 - Using Wayland WM
 - A combination of Hyprland + Hyprpaper + Waybar + Rofi + Mako
 
