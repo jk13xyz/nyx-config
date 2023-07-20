@@ -62,7 +62,7 @@
   sops.defaultSopsFile = ../../secrets/secrets.yaml;
   sops.age.sshKeyPaths = [ "/home/jens/.ssh/id_ed25519" ];
   sops.age.keyFile = "/home/jens/.config/sops/age/keys.txt";
-#  sops.secrets.user.jens = { sopsFile = ../../secrets/secrets.yaml; };
+  sops.secrets."user/jens/passwd" = { sopsFile = ../../secrets/secrets.yaml; };
 
   system.stateVersion = "23.05";
 }
