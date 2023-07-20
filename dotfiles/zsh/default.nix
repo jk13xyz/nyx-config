@@ -11,7 +11,6 @@
         oh-my-zsh = {
             enable = true;
             plugins = [ "gh" "git" "git-auto-fetch" ];
-            theme = "powerlevel10k/powerlevel10k";
         };
 
         zplug = {
@@ -21,7 +20,7 @@
             ];
         };
 
-        initExtra = "POWERLINE9K_DISABLE_CONFIGURATION_WIZARD=TRUE";
+        initExtra = "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true";
 
         shellAliases = {
             # General
