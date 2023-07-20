@@ -34,7 +34,17 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
 ## INSTALL
 
-    sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#<SYSTEM> --refresh
+Decrypt private SSH key:
+
+    ./decrypt-key.sh -h <HOST>
+
+Local install:
+
+    sudo nixos-rebuild switch --flake .#<HOST>
+    
+Straight from Github:
+
+    sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#<HOST> --refresh
 
 ## CREDITS/RESOURCES
 
