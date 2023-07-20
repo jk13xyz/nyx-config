@@ -11,7 +11,7 @@
         oh-my-zsh = {
             enable = true;
             plugins = [ "gh" "git" "git-auto-fetch" ];
-            theme = [ "powerlevel10k/powerlevel10k" ];
+            theme = [ "powerlevel10k" ];
         };
 
         shellAliases = {
