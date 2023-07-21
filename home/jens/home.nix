@@ -19,7 +19,8 @@
       ../../dotfiles/git/default.nix
       ../../dotfiles/gpg/default.nix
       ../../dotfiles/hyprland/hyprland.nix
-      ../../dotfiles/firefox/default.nix        
+      ../../dotfiles/firefox/default.nix
+      ../../dotfiles/helix/default.nix      
       ../../dotfiles/kitty/default.nix
       ../../dotfiles/ncspot/default.nix
       ../../dotfiles/neofetch/default.nix
@@ -28,6 +29,4 @@
       ../../dotfiles/zsh/default.nix
       ../../secrets/default.nix     
     ];
-
-#  sops.secrets.user.jens.passwd = { };
 }
