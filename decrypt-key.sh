@@ -33,7 +33,7 @@ nix-shell -p gnupg --run '\
     --recv-keys C577B6C556EF76FA78E1B271E2AFF28AB89D48EC &&
     gpg \
     --decrypt ./secrets/'${hostname}'.gpg \
-    > $tmpDir/id_ed25519 \
+    > '$tmpDir'/id_ed25519 \
     '
 
 if [ ${persist} = "y" ] || [ ${persist} = "yes" ];
