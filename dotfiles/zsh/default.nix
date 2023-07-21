@@ -20,7 +20,10 @@
             ];
         };
 
-        initExtra = "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true";
+        initExtra = [
+            "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true";
+            "source ~/.p10k.zsh"
+        ];
 
         shellAliases = {
             # General
@@ -40,5 +43,7 @@
             nsw = "sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#$1 --refresh";
         };
     };
+
+    home.files.".p10k.zsh".file = ./p10k.zsh;
 
 }
