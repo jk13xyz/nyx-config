@@ -22,10 +22,10 @@ if [ -z "$hostname" ];
 then
     echo "You did not pass a host name. Please try again."
     echo
-    echo "Usage: ./decrypt-keys.sh [-h host_name] [-p persist]"
+    echo "Usage: ./decrypt-key.sh [-h host_name] [-p persist]"
     echo "Host name should equal the file name of your sops file"
     echo "Persist writes age key to $HOME if 'y' or 'yes' is passed"
-    echo "Example: ./decrypt-keys.sh -h host -p yes"
+    echo "Example: ./decrypt-key.sh -h host -p yes"
     exit 1
 
 else
@@ -57,7 +57,7 @@ else
                         -private-key \
                         -i '$tmpDir'/id_ed25519 \
                         -o '$tmpDir'/keys.txt \
-                '        
+                ' 
         fi
 
     else
