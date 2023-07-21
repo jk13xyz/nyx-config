@@ -23,7 +23,9 @@ then
     echo "You did not pass a host name. Please try again."
     echo
     echo "Usage: ./decrypt-key.sh [-h host_name] [-p persist]"
+    echo
     echo "Host name should equal the file name of your sops file"
+    echo
     echo "Persist writes age key to $HOME if 'y' or 'yes' is passed"
     echo "Example: ./decrypt-key.sh -h host -p yes"
     exit 1
