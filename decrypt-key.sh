@@ -22,7 +22,7 @@ done
 homeDir=$HOME
 tmpDir=/tmp/keys
 
-mkdir -p ${tmpDir}
+mkdir -p $tmpDir
 
 echo $homeDir
 echo $tmpDir
@@ -36,7 +36,7 @@ nix-shell -p gnupg --run '\
     > '$tmpDir'/id_ed25519 \
     '
 
-if [ ${persist} = "y" ] || [ ${persist} = "yes" ];
+if [ $persist='y' ] || [ $persist='yes' ];
 
     then
         nix-shell -p ssh-to-age --run '\
