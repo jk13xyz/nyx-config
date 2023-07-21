@@ -24,7 +24,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 ### NYX_PAD
     Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
     WM/DE: Wayland + Hyprland
-    Shell: zsh + oh-my-zsh + Starship
+    Shell: zsh + oh-my-zsh
     OS Version: 23.11-unstable
 
 ### NYX_TOP (not yet started)
@@ -37,8 +37,8 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
 Decrypt private SSH key:
 
-    ./decrypt-key.sh -h <HOST>
-
+    ./decrypt-key.sh -h <HOST> -p <y|yes|n|no> 
+    
 Local install:
 
     sudo nixos-rebuild switch --flake .#<HOST>
