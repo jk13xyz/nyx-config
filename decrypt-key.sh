@@ -42,14 +42,14 @@ if [ ${persist} = "y" ] || [ ${persist} = "yes" ];
         nix-shell -p ssh-to-age --run '\
             ssh-to-age \
                 -private-key \
-                -i $tmpDir/id_ed25519 \
-                -o $homeDir/keys.txt \
+                -i '$tmpDir'/id_ed25519 \
+                -o '$homeDir'/keys.txt \
             '
     else
         nix-shell -p ssh-to-age --run '\
             ssh-to-age \
                 -private-key \
-                -i $tmpDir/id_ed25519 \
-                -o $tmpDir/keys.txt \
+                -i '$tmpDir'/id_ed25519 \
+                -o '$tmpDir'/keys.txt \
         '        
 fi
