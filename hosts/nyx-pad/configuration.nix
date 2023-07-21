@@ -7,6 +7,7 @@
       ./services.nix
       ../common/fonts.nix      
       ../common/locale.nix
+      ../common/wireless.nix
       ../../dotfiles/hyprland/default.nix
       ../../dotfiles/hyprland/hyprpaper/default.nix   
     ];
