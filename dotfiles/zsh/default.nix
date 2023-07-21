@@ -20,10 +20,10 @@
             ];
         };
 
-        initExtra = [
-            "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true"
-            "source ~/.p10k.zsh"
-        ];
+        initExtra = ''
+          POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+	  source ~/.p10k.zsh
+        '';
 
         shellAliases = {
             # General
@@ -31,16 +31,10 @@
             ll = "ls -al";
 
             # Git
-	        add = "git add --all";
-            commit = "git commit -m $1";
+	    add = "git add --all";
             fetch = "git fetch";
             push = "git push";
             pull = "git pull";
-
-            # NixOS
-            nshell = "nix-shell -p $1";
-            install = "nix-env -iA $1";
-            nsw = "sudo nixos-rebuild switch --flake github:jk13xyz/nyx-config#$1 --refresh";
         };
     };
 
