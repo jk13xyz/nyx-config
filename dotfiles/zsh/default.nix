@@ -20,10 +20,10 @@
             ];
         };
 
-        initExtra = [
-            "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true"
-            "source ~/.p10k.zsh"
-        ];
+        initExtra = ''
+          POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+	  source ~/.p10k.zsh
+        '';
 
         shellAliases = {
             # General
@@ -44,6 +44,6 @@
         };
     };
 
-    home.file.".p10k.zsh".source = ./p10k.zsh;
+    home.file."p10k.zsh".source = ./.p10k.zsh;
 
 }
