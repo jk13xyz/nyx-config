@@ -1,4 +1,4 @@
 {
     home.file."./.sops.yaml".source = ./.sops.yaml;
-    home.file."./${networking.hostname}.yaml".source = ./${networking.hostname}.yaml;
+    home.file."./nyx-pad.yaml".source = ./nyx-pad.yaml;
 }

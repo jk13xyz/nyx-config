@@ -21,7 +21,7 @@
         };
 
         initExtra = [
-            "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true";
+            "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true"
             "source ~/.p10k.zsh"
         ];
 
@@ -44,6 +44,6 @@
         };
     };
 
-    home.files.".p10k.zsh".file = ./p10k.zsh;
+    home.files.".p10k.zsh".source = ./p10k.zsh;
 
 }
