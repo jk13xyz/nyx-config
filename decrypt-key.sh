@@ -1,6 +1,6 @@
 # !/usr/bin/env bash
 
-while getopts ":h:p:help:" option
+while getopts ":h:p:" option
 do
     case $option in
         h)  
