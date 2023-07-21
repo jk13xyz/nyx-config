@@ -63,7 +63,7 @@ else
         fi
 
     else
-        echo "File ./secrets'$hostname'.gpg' was not found."
+        echo "File ./secrets/'$hostname'.gpg' was not found."
         exit 1
     
     fi
