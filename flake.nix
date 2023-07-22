@@ -17,16 +17,20 @@
 
       sops-nix = {
         url = "github:Mic92/sops-nix";
-	inputs.nixpkgs.follows = "nixpkgs";
+	      inputs.nixpkgs.follows = "nixpkgs";
       };
 
       agenix = {
         url = "github:ryantm/agenix";
       };
+
+      lanzaboote = {
+        url = "github:nix-community/lanzaboote";
+      };
      
     };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, lanzaboote, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       username = "jens";
@@ -45,9 +49,10 @@
           inherit system;
           modules = [
             ./hosts/nyx-pad/configuration.nix
+            agenix.nixosModules.default
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
-            agenix.nixosModules.default
+            lanzaboote.nixosModules.lanzaboote
             inputs.sops-nix.nixosModules.sops
 	    {
 	      home-manager.users.${username} = import ./home/${username}/home.nix;

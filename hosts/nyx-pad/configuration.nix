@@ -21,11 +21,20 @@
     '';
   };
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.configurationLimit = 5;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
+  boot = {
+    bootspec.enable = true;
+    loader.systemd-boot = {
+      enable = lib.mkForce false;
+      systemd-boot.configurationLimit = 5;
+      efi.canTouchEfiVariables = true;
+    };
+    initrd.secrets = {
+      "/crypto_keyfile.bin" = null;
+    };
+    lanzaboote = {
+      enable = true;
+      pkiBundle = "/etc/secureboot";
+    };
   };
 
   networking.hostName = "nyx-pad";
