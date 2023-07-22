@@ -26,8 +26,8 @@
     loader.systemd-boot = {
       enable = lib.mkForce false;
       systemd-boot.configurationLimit = 5;
-      efi.canTouchEfiVariables = true;
     };
+    efi.canTouchEfiVariables = true;
     initrd.secrets = {
       "/crypto_keyfile.bin" = null;
     };
