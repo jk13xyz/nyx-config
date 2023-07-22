@@ -31,7 +31,9 @@
         canTouchEfiVariables = true;
       };
       initrd = {
-        "/crypto_keyfile.bin" = null;
+        secrets = {
+          "/crypto_keyfile.bin" = null;
+        };
       };
       lanzaboote = {
         enable = true;
