@@ -21,7 +21,7 @@
     '';
   };
 
-  boot.loader.systemd-boot.enable = mkForce false;
+  boot.loader.systemd-boot.enable = lib.mkForce false;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.secrets = {
