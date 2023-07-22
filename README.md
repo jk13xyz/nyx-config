@@ -28,7 +28,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 - OS: 23.11-unstable
 
 ### NYX_TOP (not yet started)
-- AMD Ryzen 9 7950X + Radeon 7900XT + 64GB RAM
+- AMD Ryzen 9 7950X + Radeon RX 7900XT + 64GB RAM
 - OS: NixOS 23.11-unstable | Windows 11 Pro
 
 ### NYX_SERVER (not yet started)
