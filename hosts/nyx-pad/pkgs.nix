@@ -6,6 +6,7 @@
         pkgs.brightnessctl
         pkgs.clipman
         pkgs.grim
+        pkgs.htop
         pkgs.mako
         pkgs.polkit
         pkgs.rofi
@@ -15,6 +16,7 @@
         pkgs.ssh-to-age
         pkgs.slurp
         pkgs.swappy
+        pkgs.swayidle
         pkgs.xdg-desktop-portal-hyprland
         pkgs.zip
         pkgs.zsh-autosuggestions
