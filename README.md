@@ -22,16 +22,21 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 ## CURRENT_SETUP
 
 ### NYX_PAD
-    Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
-    WM/DE: Wayland + Hyprland
-    Shell: zsh + oh-my-zsh
-    OS Version: 23.11-unstable
+- Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
+- WM/DE: Wayland + Hyprland
+- Shell: zsh + oh-my-zsh
+- OS: 23.11-unstable
 
 ### NYX_TOP (not yet started)
+<<<<<<< HEAD
     Intel i5-8600K + GeForce 1070Ti + 16 GB RAM 
+=======
+- AMD Ryzen 9 7950X + Radeon RX 7900XT + 64GB RAM
+- OS: NixOS 23.11-unstable | Windows 11 Pro
+>>>>>>> e7ef3e2af489147b704e0ebe61b232fcbca420f8
 
 ### NYX_SERVER (not yet started)
-    AMD Ryzen 7 5700G + 64GB RAM
+- AMD Ryzen 7 5700G + 64GB RAM
 
 ## INSTALL
 
