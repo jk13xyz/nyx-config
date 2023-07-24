@@ -34,6 +34,17 @@
       unload-module module-suspend-on-idle
     '';
   };
+
+  services.rtkit.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    asla.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+
   hardware.bluetooth = {
     enable = true;
   };

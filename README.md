@@ -28,7 +28,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
     OS Version: 23.11-unstable
 
 ### NYX_TOP (not yet started)
-    Intel i5-8600K + GeForce 1070Ti + 16 GB RAM
+    Intel i5-8600K + GeForce 1070Ti + 16 GB RAM 
 
 ### NYX_SERVER (not yet started)
     AMD Ryzen 7 5700G + 64GB RAM

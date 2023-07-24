@@ -10,5 +10,9 @@
       gpgPath = "${config.programs.gpg.package}/bin/gpg2";
       signByDefault = true;
     };
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+    ignores = [ "results" ]
   };
 }

@@ -13,4 +13,10 @@
     xdg.portal = {
         enable = true;
     };
+
+    home.packages = with pkgs; [
+        swayidle
+    ];
+
+    
 }
