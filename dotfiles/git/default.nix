@@ -13,6 +13,6 @@
     extraConfig = {
       init.defaultBranch = "main";
     };
-    ignores = [ "results" ]
+    ignores = [ "results" ];
   };
 }
