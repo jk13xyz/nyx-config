@@ -27,7 +27,7 @@
     };
 
   hardware.pulseaudio = {
-    enable = true;
+    enable = false;
     package = pkgs.pulseaudioFull;
     extraConfig = ''
       load-module module-switch-on-connect
