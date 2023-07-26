@@ -17,17 +17,17 @@ tmpDir=/tmp/keys
 
 mkdir -p $tmpDir
 
-if [ -z "$hostname" ];
+if [ -z '$hostname' ];
 
 then
     echo "You did not pass a host name. Please try again."
     echo
-    echo "Usage: ./decrypt-key.sh [-h host_name] [-p persist]"
+    echo "Usage: ./nyx-decrypt.sh [-h host_name] [-p persist]"
     echo
     echo "Host name should equal the file name of your sops file"
     echo
     echo "Persist writes age key to $HOME if 'y' or 'yes' is passed"
-    echo "Example: ./decrypt-key.sh -h host -p yes"
+    echo "Example: ./nyx-decrypt.sh -h host -p yes"
     exit 1
 
 else
@@ -59,11 +59,11 @@ else
                         -private-key \
                         -i '$tmpDir'/id_ed25519 \
                         -o '$tmpDir'/keys.txt \
-                ' 
+            ' 
         fi
 
     else
-        echo "File ./secrets/$hostname.gpg was not found."
+        echo 'File ./secrets/$hostname.gpg was not found.'
         exit 1
     
     fi

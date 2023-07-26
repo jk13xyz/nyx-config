@@ -35,7 +35,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
 Decrypt private SSH key:
 
-    ./decrypt-key.sh -h <HOST> -p <y|yes|n|no> 
+    ./nyx-decrypt.sh -h <HOST> -p <y|yes|n|no> 
     
 Local install:
 
