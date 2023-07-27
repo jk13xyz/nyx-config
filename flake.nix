@@ -54,9 +54,23 @@
             hyprland.nixosModules.default
             lanzaboote.nixosModules.lanzaboote
             inputs.sops-nix.nixosModules.sops
-	    {
-	      home-manager.users.${username} = import ./home/${username}/home.nix;
-	    }
+            {
+              home-manager.users.${username} = import ./home/nyx-pad/home.nix;
+            }
+          ];
+        };
+
+        nyx-server  = lib.nixosSystem {
+          inherit system;
+          modules = [
+            ./hosts/nyx-pad/configuration.nix
+            agenix.nixosModules.default
+            home-manager.nixosModules.home-manager
+            lanzaboote.nixosModules.lanzaboote
+            inputs.sops-nix.nixosModules.sops
+            {
+              home-manager.users.${username} = import ./home/nyx-pad/home.nix;
+            }
           ];
         };
       };
