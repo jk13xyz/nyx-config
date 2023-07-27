@@ -63,6 +63,12 @@ else
             ' 
         fi
 
+        nix-shell -p at --run '\
+            echo "The keys in '$tmpDir' will now be automatically deleted in 1 hour" \
+            rm -rf '$tmpDir' | at now + 1 hours \
+        '
+        exit 1        
+
     else
         echo 'File ./secrets/$hostname.gpg was not found.'
         exit 1
