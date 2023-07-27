@@ -20,14 +20,15 @@ mkdir -p $tmpDir
 if [ -z '$hostname' ];
 
 then
-    echo "You did not pass a host name. Please try again."
-    echo
-    echo "Usage: ./nyx-decrypt.sh [-h host_name] [-p persist]"
-    echo
-    echo "Host name should equal the file name of your sops file"
-    echo
-    echo "Persist writes age key to $HOME if 'y' or 'yes' is passed"
-    echo "Example: ./nyx-decrypt.sh -h host -p yes"
+    echo -e "You did not pass a host name. Please try again.\n
+    \n
+    Usage: ./nyx-decrypt.sh [-h host_name] [-p persist]\n
+    \n
+    Host name should equal the file name of your sops file\n
+    \n
+    Persist writes age key to $HOME if 'y' or 'yes' is passed\n
+    Example: ./nyx-decrypt.sh -h host -p yes\n
+    "
     exit 1
 
 else
