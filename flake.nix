@@ -15,6 +15,10 @@
         url = "github:hyprwm/Hyprland";
       };
 
+      nur = {
+        url = "github:nix-community/NUR";
+      };
+
       sops-nix = {
         url = "github:Mic92/sops-nix";
 	      inputs.nixpkgs.follows = "nixpkgs";
@@ -30,7 +34,7 @@
      
     };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, lanzaboote, sops-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, lanzaboote, nur, sops-nix, ... }@inputs: 
     let
       system = "x86_64-linux";
       username = "jens";
@@ -53,6 +57,7 @@
             home-manager.nixosModules.home-manager
             hyprland.nixosModules.default
             lanzaboote.nixosModules.lanzaboote
+            nur.nixosModules.nur
             inputs.sops-nix.nixosModules.sops
             {
               home-manager.users.${username} = import ./home/nyx-pad/home.nix;
