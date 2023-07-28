@@ -6,9 +6,9 @@
 
   networking.wireguard.interfaces = {
     wg0 = {
-      ips = [ "10.100.0.2/24" ];
+      ips = [ "10.2.0.2/32" ];
       listenPort = 51820;
-      privateKey = config.sops.secrets.protonvpn-privkey.path;
+      privateKeyFile = config.sops.secrets.protonvpn-privkey.path;
 
       peers = [
 
