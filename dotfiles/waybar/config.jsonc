@@ -6,7 +6,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 30,
-    "modules-left": [ "clock" wlr/workspaces],
+    "modules-left": [ "clock" ],
     "modules-center": [  ],
     "modules-right": ["temperature", "custom/power_profile","battery", "network", "bluetooth", "backlight","pulseaudio","pulseaudio#microphone","tray"],
     "hyprland/window": {
@@ -86,7 +86,7 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "tooltip": false,
         "format-muted": "",
         "on-click": "pavucontrol",
