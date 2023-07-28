@@ -7,6 +7,7 @@
       ./pkgs.nix
       ./services.nix
       ./sops.nix
+      ./vpn.nix
       ../common/fonts.nix      
       ../common/locale.nix
       ../common/wireless.nix
