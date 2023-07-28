@@ -53,19 +53,19 @@ else
                         -private-key \
                         -i '$tmpDir'/id_ed25519 \
                         -o '$homeDir'/keys.txt \
-                    '
+                '
             else
                 nix-shell -p ssh-to-age --run '\
                     ssh-to-age \
                         -private-key \
                         -i '$tmpDir'/id_ed25519 \
                         -o '$tmpDir'/keys.txt \
-            ' 
+                ' 
         fi
 
         nix-shell -p at --run '\
-            echo "The keys in '$tmpDir' will now be automatically deleted in 1 hour" \
-            rm -rf '$tmpDir' | at now + 1 hours \
+            echo "The keys in '$tmpDir' will now be automatically deleted in 5 minutes" \
+            rm -rf '$tmpDir' | at now + 5 minutes \
         '
         exit 1        
 
