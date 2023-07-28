@@ -1,6 +1,5 @@
-{config, ...}
+{config, ...}:
 {
-  ...
   networking.firewall = {
     allowedUDPPorts = [ 51820 ];
   };
@@ -9,7 +8,7 @@
     wg0 = {
       ips = [ "10.100.0.2/24" ];
       listenPort = 51820;
-      privateKey = config.sops.secrets.protonvpn-priv-key.path;
+      privateKey = config.sops.secrets.protonvpn-privkey.path;
 
       peers = [
 
