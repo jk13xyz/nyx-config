@@ -64,9 +64,10 @@ then
                         ssh-to-age \
                             -private-key \
                             -i '$tmpDir'/id_ed25519 \
-                            -o '$homeDir'/keys.txt &&
-                        mv '$tmpDir'/id_ed25519 '$homeDir'/id_ed25519
-                    '
+                            -o '$homeDir'/keys.txt \
+                        ' &&
+                        mv '$tmpDir'/id_ed25519 '$homeDir'/.ssh/id_ed25519
+                    
                 else
                     echo -e
                         "\n
