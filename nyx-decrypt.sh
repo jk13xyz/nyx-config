@@ -11,6 +11,7 @@ do
             ;;
         k)
             publickey=${OPTARG}     # If pubkey is passed, use this one
+	    ;;
     esac
 done
 
@@ -23,9 +24,11 @@ if [ ! -z publickey ];
 
 then
     pubKey=$publickey
+    echo "Key Option 1"
 
 else
     pubKey="C577B6C556EF76FA78E1B271E2AFF28AB89D48EC"
+    echo "Key Option 2"
 fi
 
 # Defines the temporary folder for the SSH and age private keys and creates the folder.
@@ -47,11 +50,13 @@ then
             --decrypt ./secrets/'$hostname'.gpg \
             > '$tmpDir'/id_ed25519 \
             '
+
         # Checks whether the persistence flag has been passed.
         # If 'y' or 'yes', the script exports the age private key to $HOME
         # If not, the key will be written into the $tmpDir.
         # In both cases, $tmpDir is deleted after the script ran.
 
+<<<<<<< HEAD
         if [ ! -z $persist ];
         then
             if [ $persist='y' ] || [ $persist='yes' ];
@@ -85,6 +90,30 @@ then
             \n
             Decryption completed. The temporary folder: $tmpDir has been deleted
             "
+=======
+        if [ -z $persist ] && [ $persist='y' ] || [ $persist='yes' ];
+
+            then
+		echo "Option 1"
+                nix-shell -p ssh-to-age --run '\
+                    ssh-to-age \
+                        -private-key \
+                        -i '$tmpDir'/id_ed25519 \
+                        -o '$homeDir'/keys.txt \
+                '
+            else
+		echo "Option 2"
+                nix-shell -p ssh-to-age --run '\
+                    ssh-to-age \
+                        -private-key \
+                        -i '$tmpDir'/id_ed25519 \
+                        -o '$tmpDir'/keys.txt \
+                '
+        fi
+
+#        rm -rf $tmpDir
+        echo "Decryption completed. The temporary folder: $tmpDir has been deleted"
+>>>>>>> 3bce4a207b50fd4e8dd58785ff209db2ff100618
         exit 1
 
     else
@@ -92,7 +121,7 @@ then
 
         echo "File ./secrets/$hostname.gpg was not found. Please make sure the file exists."
         exit 1
-    
+
     fi
 else
     # Error message, if hostname hasn't been passed correctly
@@ -109,4 +138,9 @@ else
         Example: ./nyx-decrypt.sh -h host -p yes\n
         "
     exit 1
+<<<<<<< HEAD
 fi
+=======
+
+fi
+>>>>>>> 3bce4a207b50fd4e8dd58785ff209db2ff100618
