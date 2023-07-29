@@ -3,10 +3,10 @@
 while getopts ":h:p:" option
 do
     case $option in
-        h)  
-            hostname=${OPTARG}      # Queries the host-name
+        h)
+           hostname=${OPTARG}      # Queries the host-name
             ;;
-        p)  
+        p)
             persist=${OPTARG}       # If "y" or "yes", keys are written to $HOME
             ;;
         k)
@@ -67,12 +67,10 @@ then
                             -o '$homeDir'/keys.txt &&
                     '
                 else
-                    echo -e 
-                        "
-                        \n
+                    echo -e
+                        "\n
                         You did not pass a valid persist flag. Valid persist flags are: 'y' or 'yes'.\n
-                        If you wish to not persist the age private key, just don't use the persist flag at all.
-                        "
+                        If you wish to not persist the age private key, just don't use the persist flag at all."
             fi
         else
             nix-shell -p ssh-to-age --run '\
@@ -84,12 +82,7 @@ then
         fi
 
         rm -rf $tmpDir
-        echo -e 
-            "
-            \n
-            Decryption completed. The temporary folder: $tmpDir has been deleted
-            "
-        exit 1
+        echo -e "\nDecryption completed. The temporary folder: $tmpDir has been deleted"
 
     else
         # Error message if file didn't exist
@@ -101,16 +94,13 @@ then
 else
     # Error message, if hostname hasn't been passed correctly
 
-    echo -e 
-        "
-        You did not pass a host name. Please try again.\n
+    echo -e "You did not pass a host name. Please try again.\n
         \n
         Usage: ./nyx-decrypt.sh [-h host_name] [ -k gpg_public_key ] [-p persist]\n
         \n
         Host name should equal the file name of your sops file\n
         \n
         Persist writes age key to $HOME if 'y' or 'yes' is passed\n
-        Example: ./nyx-decrypt.sh -h host -p yes\n
-        "
+        Example: ./nyx-decrypt.sh -h host -p yes\n"
     exit 1
 fi
