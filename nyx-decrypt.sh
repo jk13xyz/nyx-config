@@ -36,11 +36,8 @@ mkdir -p $tmpDir
 # Checks if hostname if passed, if not, it checks if the encrypted file exists.
 
 if [ ! -z '$hostname' ];
-
 then
-
     if [ -f './secrets/'$hostname'.gpg' ];
-
     then
         nix-shell -p gnupg --run '\
             gpg \
@@ -55,48 +52,61 @@ then
         # If not, the key will be written into the $tmpDir.
         # In both cases, $tmpDir is deleted after the script ran.
 
-        if [ $persist='y' ] || [ $persist='yes' ];
-
-            then
-                nix-shell -p ssh-to-age --run '\
-                    ssh-to-age \
-                        -private-key \
-                        -i '$tmpDir'/id_ed25519 \
-                        -o '$homeDir'/keys.txt &&
-                '
-            else
-                nix-shell -p ssh-to-age --run '\
-                    ssh-to-age \
-                        -private-key \
-                        -i '$tmpDir'/id_ed25519 \
-                        -o '$tmpDir'/keys.txt \                      
-                ' 
+        if [ ! -z $persist ];
+        then
+            if [ $persist='y' ] || [ $persist='yes' ];
+                then
+                    nix-shell -p ssh-to-age --run '\
+                        ssh-to-age \
+                            -private-key \
+                            -i '$tmpDir'/id_ed25519 \
+                            -o '$homeDir'/keys.txt &&
+                    '
+                else
+                    echo -e 
+                        "
+                        \n
+                        You did not pass a valid persist flag. Valid persist flags are: 'y' or 'yes'.\n
+                        If you wish to not persist the age private key, just don't use the persist flag at all.
+                        "
+            fi
+        else
+            nix-shell -p ssh-to-age --run '\
+                ssh-to-age \
+                    -private-key \
+                    -i '$tmpDir'/id_ed25519 \
+                    -o '$tmpDir'/keys.txt \
+            '
         fi
 
         rm -rf $tmpDir
-        echo "Decryption completed. The temporary folder: $tmpDir has been deleted"
+        echo -e 
+            "
+            \n
+            Decryption completed. The temporary folder: $tmpDir has been deleted
+            "
         exit 1
 
     else
         # Error message if file didn't exist
 
-        echo 'File ./secrets/$hostname.gpg was not found.'
+        echo "File ./secrets/$hostname.gpg was not found. Please make sure the file exists."
         exit 1
     
     fi
 else
-
     # Error message, if hostname hasn't been passed correctly
 
-    echo -e "You did not pass a host name. Please try again.\n
-    \n
-    Usage: ./nyx-decrypt.sh [-h host_name] [ -k gpg_public_key ] [-p persist]\n
-    \n
-    Host name should equal the file name of your sops file\n
-    \n
-    Persist writes age key to $HOME if 'y' or 'yes' is passed\n
-    Example: ./nyx-decrypt.sh -h host -p yes\n
-    "
+    echo -e 
+        "
+        You did not pass a host name. Please try again.\n
+        \n
+        Usage: ./nyx-decrypt.sh [-h host_name] [ -k gpg_public_key ] [-p persist]\n
+        \n
+        Host name should equal the file name of your sops file\n
+        \n
+        Persist writes age key to $HOME if 'y' or 'yes' is passed\n
+        Example: ./nyx-decrypt.sh -h host -p yes\n
+        "
     exit 1
-
 fi
