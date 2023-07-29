@@ -56,7 +56,6 @@ then
         # If not, the key will be written into the $tmpDir.
         # In both cases, $tmpDir is deleted after the script ran.
 
-<<<<<<< HEAD
         if [ ! -z $persist ];
         then
             if [ $persist='y' ] || [ $persist='yes' ];
@@ -90,30 +89,6 @@ then
             \n
             Decryption completed. The temporary folder: $tmpDir has been deleted
             "
-=======
-        if [ -z $persist ] && [ $persist='y' ] || [ $persist='yes' ];
-
-            then
-		echo "Option 1"
-                nix-shell -p ssh-to-age --run '\
-                    ssh-to-age \
-                        -private-key \
-                        -i '$tmpDir'/id_ed25519 \
-                        -o '$homeDir'/keys.txt \
-                '
-            else
-		echo "Option 2"
-                nix-shell -p ssh-to-age --run '\
-                    ssh-to-age \
-                        -private-key \
-                        -i '$tmpDir'/id_ed25519 \
-                        -o '$tmpDir'/keys.txt \
-                '
-        fi
-
-#        rm -rf $tmpDir
-        echo "Decryption completed. The temporary folder: $tmpDir has been deleted"
->>>>>>> 3bce4a207b50fd4e8dd58785ff209db2ff100618
         exit 1
 
     else
@@ -138,9 +113,4 @@ else
         Example: ./nyx-decrypt.sh -h host -p yes\n
         "
     exit 1
-<<<<<<< HEAD
 fi
-=======
-
-fi
->>>>>>> 3bce4a207b50fd4e8dd58785ff209db2ff100618
