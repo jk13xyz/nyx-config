@@ -79,7 +79,7 @@ then
 
     else
         # Error message if file didn't exist
-        
+
         echo 'File ./secrets/$hostname.gpg was not found.'
         exit 1
     
@@ -90,7 +90,7 @@ else
 
     echo -e "You did not pass a host name. Please try again.\n
     \n
-    Usage: ./nyx-decrypt.sh [-h host_name] [-p persist]\n
+    Usage: ./nyx-decrypt.sh [-h host_name] [ -k gpg_public_key ] [-p persist]\n
     \n
     Host name should equal the file name of your sops file\n
     \n
