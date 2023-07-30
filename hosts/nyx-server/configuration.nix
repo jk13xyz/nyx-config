@@ -9,6 +9,7 @@
       ./sops.nix
       ../common/fonts.nix      
       ../common/locale.nix
+      ../../docker/default.nix
     ];
 
   nix = {
@@ -35,7 +36,7 @@
   users.users.jens = {
     isNormalUser = true;
     description = "Jens Krieger";
-    extraGroups = [ "jens" "audio" "networkmanager" "wheel" ];
+    extraGroups = [ "jens" "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
   };
