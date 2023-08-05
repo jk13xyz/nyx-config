@@ -26,7 +26,7 @@
     ]);
 
     environment.systemPackages = with pkgs; [
-        gnomeExtensions.addindicator
+        gnomeExtensions.appindicator
         gnomeExtensions.dash-to-dock
     ];
 
