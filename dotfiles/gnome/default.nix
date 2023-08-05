@@ -25,4 +25,9 @@
         atomix # puzzle game
     ]);
 
+    environment.systemPackages = with pkgs; [
+        gnomeExtensions.addindicator
+        gnomeExtensions.dash-to-dock
+    ];
+
 }
