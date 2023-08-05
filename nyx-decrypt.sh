@@ -22,13 +22,11 @@ homeDir=$HOME
 
 if [ ! -z publickey ];
 
-then
-    pubKey=$publickey
-    echo "Key Option 1"
-
-else
-    pubKey="C577B6C556EF76FA78E1B271E2AFF28AB89D48EC"
-    echo "Key Option 2"
+    then
+        pubKey=$publickey
+        
+    else
+        pubKey="C577B6C556EF76FA78E1B271E2AFF28AB89D48EC"
 fi
 
 # Defines the temporary folder for the SSH and age private keys and creates the folder.
