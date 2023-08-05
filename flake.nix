@@ -73,13 +73,13 @@
         nyx-server  = lib.nixosSystem {
           inherit system;
           modules = [
-            ./hosts/nyx-pad/configuration.nix
+            ./hosts/nyx-server/configuration.nix
             agenix.nixosModules.default
             home-manager.nixosModules.home-manager
             lanzaboote.nixosModules.lanzaboote
             inputs.sops-nix.nixosModules.sops
             {
-              home-manager.users.${username} = import ./home/nyx-pad/home.nix;
+              home-manager.users.${username} = import ./home/nyx-server/home.nix;
             }
           ];
         };
