@@ -21,7 +21,7 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
 ### NYX_PAD
 - Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
-- WM/DE: Wayland + Gnome | Wayland + Hyprland (planned)
+- WM/DE: Wayland + Gnome (current) | Wayland + Hyprland (planned)
 - Shell: zsh + oh-my-zsh
 - OS: 23.11-unstable
 
