@@ -9,7 +9,6 @@
         pkgs.htop
         pkgs.mako
         pkgs.polkit
-        pkgs.rofi
         pkgs.pavucontrol
         pkgs.pipewire
         pkgs.pulseaudio
@@ -23,6 +22,7 @@
         pkgs.zsh-syntax-highlighting
         pkgs.zsh-powerlevel10k    
         pkgs.unzip
+        pkgs.wofi        
         yubikey-personalization
         yubikey-manager
     ];
