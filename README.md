@@ -21,12 +21,12 @@ So, bottom line: Use it as inspiration, **don't use it for production.**
 
 ### NYX_PAD
 - Lenovo ThinkPad X1 Nano Gen 2 w/ Intel Core i7-1270p + 16GB RAM
-- WM/DE: Wayland + Hyprland
+- WM/DE: Wayland + Gnome | Wayland + Hyprland (planned)
 - Shell: zsh + oh-my-zsh
 - OS: 23.11-unstable
 
 ### NYX_TOP (not yet started)
-    Intel i5-8600K + GeForce 1070Ti + 16 GB RAM
+- Intel i5-8600K + GeForce 1070Ti + 16 GB RAM
 
 ### NYX_SERVER (not yet started)
 - AMD Ryzen 7 5700G + 64GB RAM
