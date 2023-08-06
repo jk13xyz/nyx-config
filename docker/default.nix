@@ -1,6 +1,9 @@
 {
-    virtualisation.docker.enable = true;
-
+    virtualisation.docker = {
+        enable = true;
+        enableOnBoot = true;
+    }; 
+       
     users = {
         extraUsers = {
             docker = {
